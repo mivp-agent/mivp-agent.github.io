@@ -20,3 +20,8 @@ jobs:
     with:
       github_token: ${{ secrets.GITHUB_TOKEN }}
       publish_dir: ./site
+  - name: Checkout mivp-agent
+    uses: actions/checkout@v2
+    with:
+      repository: CarterFendley/moos-ivp-agent
+      path: moos-ivp-agent
