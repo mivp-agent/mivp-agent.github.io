@@ -9,7 +9,7 @@ Follow the instructions [here](https://conda.io/projects/conda/en/latest/user-gu
 Assure that your terminal prompt is now prefixed by the conda environment that is currently activated as bellow
 
 ```
-(base) ~/src/mivp-agent.github.io $ 
+(base) $ 
 ```
 
 If you don't see the `(base)` text (indicating you are in the "base" conda environment), it is suggested that you follow [this](https://github.com/conda/conda/blob/master/CHANGELOG.md#440-2017-12-20) practice
