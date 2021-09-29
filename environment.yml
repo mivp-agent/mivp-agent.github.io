@@ -1,0 +1,6 @@
+name: mivp-agent-web
+dependencies:
+  - python=3.8
+  - pip
+  - pip:
+    - mkdocs==1.2.2
