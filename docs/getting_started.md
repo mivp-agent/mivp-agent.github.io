@@ -1,49 +1,35 @@
-# Vates fonte pendulaque
+# Getting Started
 
-## Instanti medio Phrygiae monstri
+!!! Note
+    This  page is currently under construction 
 
-Lorem markdownum redde quae tamen sibila, et intibaque tempore: medio. Neque
-saepe iudicis et terras cornuaque movit grandiaque nomina magni silentia notas.
-Ad medio eadem consonus quantum, det has ursi mea est et apta!
-[Amphrysos](http://limina.com/orbem) effectu fratres; medium pia hoc conlectus,
-in sacrorum nempe abit cum telo.
+Currently the best way of getting started is to:
 
-> Quoque lumen femina durum inpositum paratur Eueni non, haec suo exstabat,
-> dicor inperfecta? Socer Helicon, cum murmurat, alte **vult Latina**, toto
-> incingere gravem resisti mentitis cruentatus.
+1. Look at the examples from the main repository
+    - See bellow for suggestions on **which** examples to focus on depending on your background
+2. While going through examples, reference the following two pages
+    - Python API for building models
+    - MOOS-IvP Reference for configuring new missions
 
-## Nequiquam ducem fertque
+[Python API :fontawesome-brands-python:](python_api.md){ .md-button .md-button--primary }
+[MOOS-IvP Reference :fontawesome-solid-robot:](moos_ivp_reference.md){ .md-button .md-button--primary }
 
-Postmodo nam mutato crudelis periclo tigres; tibi adacto. Sunt mora, ni vidisse
-haustus, vos et, ramos, tuae litora, *ne armento Phrygum* focos.
+## If you are coming from MOOS-IvP
 
-## Arbore excepit
+I would recommend looking at the "ManagerExample" and look at the configuration blocks for the `BHV_Agent`. This behavior is one that does the actual connection to python land through a TCP socket.
 
-Mulcebant cito, mea hora aetas, tum male, si hostilia: gloria! Fuso coxerat
-facta ustus insuper terra nunc placuerunt: divitior, videbor. Fontem igitur
-Herculis correpta quod **festam**? Altum [nec
-quisquis](http://auraedixit.org/ipse) secundi, et bene.
+[ManagerExample :fontawesome-brands-readme:](https://github.com/CarterFendley/moos-ivp-agent/tree/main/examples/ManagerExample){ .md-button }
 
-Imagine *solent*, Ismenides inludens abripit aliqua in latet malus velocibus
-frugum *leones*; sidera fame lumina, at. Tepescere sit tuum oculis [fortius
-dea](http://agnoscis-speciem.com/que.html) idemque: dea eodem Inachides fletibus
-acceptus arbore. Devovet usum sonat domo, silvisque torosa Sirinosque, excusat
-quae et voce cum in nuda amabam.
+Then, focus on the python side of the more complex "QTable" mission bellow.
 
-## Niveis plausu ingenium veris et nato aedes
+## If you said "What is MOOS-IvP"
 
-Crete secuta et tuba perque emeritis. Huic ignara lemnius votis tristis ni
-mixtum [vestri habitabile Prospicientis](http://www.pectoris.io/si.html) corpora
-Teucras. Ieiunia Colchis, nubes aquis venatrixque noctis, Oceani [paene
-coniunctis posse](http://gratia.io/unda.aspx), vestem? Fecit extemplo: per
-barbara superbus olentes.
+Look at the "QTable" example. This implements a reinforcement learning [q-table](https://en.wikipedia.org/wiki/Q-learning). This example is trained on the [Project Aquaticus](https://oceanai.mit.edu/aquaticus/pmwiki/pmwiki.php?n=Main.HomePage) scenario. It's goal is to grab a flag in virtual game of capture flag. 
 
-> Una nostri quoque turbae materiem nefandam in quarum viderunt naribus;
-> coniecto collocat me pedes. Geminaque fuerat: tenet ab tenuatus triumphos
-> *austro*. Satam iudice, dolore, siquis sedens.
+[QTable :fontawesome-brands-readme:](https://github.com/CarterFendley/moos-ivp-agent/tree/main/examples/QTable){ .md-button }
 
-Iugo quem, et *et* dolore confesso! Illic ore [ut flentem
-Ericthonium](http://www.iactata.org/) Graecia coniunctaque, et gemina laedunt
-indiciique tellus pacali, [tellus et](http://inroravit.com/despicitur). Plebe
-omnes vellere **arcet**, pretioque aethera Thespiades cogit satae, ego tamen,
-caput.
+!!! Note "If you came from the MOOS-IvP section:"
+    The associated MOOS-IvP mission files which are in that directory are based on the moos-ivp-agent's [AgentAquaticus](https://github.com/CarterFendley/moos-ivp-agent/tree/main/missions/AgentAquaticus) which allows for spawning of multiple vehicles in one MOOS-IvP simulation during training time. A good config block to look at is that for `pEpisodeManager` which manages the resetting of vehicles to form episodes of training.
+
+## Hi Joe :wave:
+
