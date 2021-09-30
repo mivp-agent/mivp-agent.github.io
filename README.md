@@ -69,3 +69,14 @@ A static site can be build with the following command.
 ```
 mkdocs build
 ```
+
+## References
+
+- General
+  - [MkDocs](https://www.mkdocs.org/)
+  - [MkDocs Material Theme](https://squidfunk.github.io/mkdocs-material/)
+    - [Emoji Lookup](https://emojipedia.org)
+    - [Fontawesome](https://fontawesome.com/v5.15/icons?d=gallery&p=2)
+- Python API
+  - [mkdocstrings](https://mkdocstrings.github.io/)
+  - [Google Docstrings Example](https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html)
