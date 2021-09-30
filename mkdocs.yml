@@ -1,7 +1,6 @@
 site_name: mivp-agent
 site_url: http://mivp-agent.github.io
-theme:
-    name: "material"
+
 plugins:
     - mkdocstrings:
         watch:
@@ -10,3 +9,24 @@ nav:
     - Home: index.md
     - About: about.md
     - "Python API": python_api.md
+
+theme:
+    name: "material"
+    palette:
+        primary: green
+    icon:
+        repo: fontawesome/brands/github
+
+# Turn of "Made with MkDocs"
+extra:
+    generator: false
+
+# Base location for editing of docs
+edit_uri: https://github.com/mivp-agent/mivp-agent.github.io/tree/master/docs
+
+# Repo displace in material theme
+repo_url: https://github.com/CarterFendley/moos-ivp-agent
+repo_name: CarterFendley/moos-ivp-agent
+
+copyright: Copyright &copy; 2021 Carter Fendley
+
