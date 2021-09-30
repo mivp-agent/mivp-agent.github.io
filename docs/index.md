@@ -1,17 +1,24 @@
-# Welcome to MkDocs
+# MOOS-IvP Agent
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+## Overview
 
-## Commands
+Model agnostic ML tooling for [MOOS-IvP](https://oceanai.mit.edu/moos-ivp/pmwiki/pmwiki.php). Inspired by [moos-ivp-pLearn](https://github.com/mnovitzky/moos-ivp-pLearn) this project was designed to allow for training of python ML agents for [Project Aquaticus](https://oceanai.mit.edu/aquaticus/pmwiki/pmwiki.php?n=Main.HomePage) while also providing generalized software to use with any MOOS-IvP project. 
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+!!! Note
+    This project is still **very** young. As such feel free to any ask questions not answered by the documentation via a [github issues.](https://github.com/CarterFendley/moos-ivp-agent/). There, you can also see the current backlog.
 
-## Project layout
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+## Installation
+
+This project currently supports both OSX and Linux operating systems. See the main README.
+
+[README :fontawesome-brands-readme:](https://github.com/CarterFendley/moos-ivp-agent){ .md-button }
+
+!!! Note "Pretty Please"
+    **PLEASE** Raise a GitHub issue if there is ~any~ issue with these instructions.
+
+## Getting Started
+
+See the getting started page to start you on your ML path.
+
+[Getting Started :fontawesome-solid-tachometer-alt:](getting_started.md){ .md-button }
