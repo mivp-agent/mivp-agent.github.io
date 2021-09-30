@@ -1,2 +1,5 @@
+# Ignore local mivp_agent link
+mivp_agent
+
 # MkDocs build files
 site/

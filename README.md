@@ -46,6 +46,14 @@ If new dependencies are added to the `environment.yml` you can update your local
 conda env update -f environment.yml
 ```
 
+### Linking the python package locally
+
+This website uses [mkdocstrings](https://github.com/mkdocstrings/mkdocstrings) to generate API documentation for python. This package looks in the `src/` directory for the python module. You must link your copy of the `moos-ivp-agent/src/python_module` directory to the `src` directory. For example I use the following command on OSX.
+
+```
+ln -s /Users/carter/src/moos-ivp-agent/src/python_module/mivp_agent /Users/carter/src/mivp-agent.github.io/mivp_agent
+```
+
 ### Serving the website locally
 
 A local version of the documentation can be served through the following command in the root directory.

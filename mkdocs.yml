@@ -1,5 +1,12 @@
 site_name: mivp-agent
 site_url: http://mivp-agent.github.io
+theme:
+    name: "material"
+plugins:
+    - mkdocstrings:
+        watch:
+            - mivp_agent
 nav:
     - Home: index.md
     - About: about.md
+    - "Python API": python_api.md

@@ -4,3 +4,6 @@ dependencies:
   - pip
   - pip:
     - mkdocs==1.2.2
+    - mkdocs-material==7.3.0
+    - mkdocstrings==0.16.0
+  

@@ -13,6 +13,13 @@ jobs:
       with:
         activate-environment: mivp-agent-web
         environment-file: environment.yml
+    - name: Checkout mivp-agent
+      uses: actions/checkout@v2
+      with:
+        repository: CarterFendley/moos-ivp-agent
+        path: moos-ivp-agent
+    - name: Link python model to correct dir
+      run: ln -s ${{github.workspace}}/moos-ivp-agent/src/python_module/mivp_agent ${{github.workspace}}/mivp_agent
     - name: Build MkDocs
       shell: bash -l {0}
       run: mkdocs build
