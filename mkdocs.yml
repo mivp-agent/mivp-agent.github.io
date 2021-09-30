@@ -28,6 +28,9 @@ markdown_extensions:
 
 # Turn of "Made with MkDocs"
 extra:
+    analytics:
+        provider: google
+        property: G-FD1VZZ2BGB
     generator: false
 
 # Base location for editing of docs
