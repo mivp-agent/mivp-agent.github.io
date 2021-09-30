@@ -1,5 +1,7 @@
 # mivp-agent website
 
+[![Deploy GitHub Pages](https://github.com/mivp-agent/mivp-agent.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/mivp-agent/mivp-agent.github.io/actions/workflows/deploy.yml)
+
 ## Environment Setup
 
 ### Install Conda
