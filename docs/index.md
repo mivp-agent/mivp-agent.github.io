@@ -21,4 +21,4 @@ This project currently supports both OSX and Linux operating systems. See the ma
 
 See the getting started page to start you on your ML path.
 
-[Getting Started :fontawesome-solid-tachometer-alt:](getting_started.md){ .md-button }
+[Getting Started :fontawesome-solid-tachometer-alt:](getting_started.md){ .md-button .md-button--primary }
