@@ -9,11 +9,13 @@ nav:
     - Home: index.md
     - Getting Started: getting_started.md
     - Python API:
+        - Index: python/index.md
         - MissionManager: python/mission_manager.md
         - MissionMessage: python/mission_message.md 
     - MOOS-IvP Reference:
+        - Index: moos_ivp/index.md
         - BHV_Agent: moos_ivp/bhv_agent.md
-        - pEpisodeManager: moos_ivp/pEpisodeManager
+        - pEpisodeManager: moos_ivp/episode_manager.md
 
 theme:
     name: "material"
@@ -21,6 +23,10 @@ theme:
         primary: green
     icon:
         repo: fontawesome/brands/github
+    features:
+        - navigation.instant
+        - navigation.tabs
+        - navigation.tabs.sticky
 
 # For styling of components like buttons
 markdown_extensions:

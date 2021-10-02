@@ -11,8 +11,8 @@ Currently the best way of getting started is to:
     - Python API for building models
     - MOOS-IvP Reference for configuring new missions
 
-[Python API :fontawesome-brands-python:](python_api.md){ .md-button .md-button--primary }
-[MOOS-IvP Reference :fontawesome-solid-robot:](moos_ivp_reference.md){ .md-button .md-button--primary }
+[Python API :fontawesome-brands-python:](../python){ .md-button .md-button--primary }
+[MOOS-IvP Reference :fontawesome-solid-robot:](../moos_ivp.md){ .md-button .md-button--primary }
 
 ## If you are coming from MOOS-IvP
 
