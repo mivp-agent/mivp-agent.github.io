@@ -8,8 +8,12 @@ plugins:
 nav:
     - Home: index.md
     - Getting Started: getting_started.md
-    - Python API: python_api.md
-    - MOOS-IvP Reference: moos_ivp_reference.md
+    - Python API:
+        - MissionManager: python/mission_manager.md
+        - MissionMessage: python/mission_message.md 
+    - MOOS-IvP Reference:
+        - BHV_Agent: moos_ivp/bhv_agent.md
+        - pEpisodeManager: moos_ivp/pEpisodeManager
 
 theme:
     name: "material"

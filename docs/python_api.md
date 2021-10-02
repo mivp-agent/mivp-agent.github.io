@@ -1,5 +1,5 @@
 # Python API Reference
 
-- [MissionManager](api_pages/mission_manager.md)
-- [MissionMessage](api_pages/mission_message.md)
+- [MissionManager](python/mission_manager.md)
+- [MissionMessage](python/mission_message.md)
 
