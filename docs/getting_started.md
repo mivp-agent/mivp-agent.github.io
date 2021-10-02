@@ -12,7 +12,7 @@ Currently the best way of getting started is to:
     - MOOS-IvP Reference for configuring new missions
 
 [Python API :fontawesome-brands-python:](../python){ .md-button .md-button--primary }
-[MOOS-IvP Reference :fontawesome-solid-robot:](../moos_ivp.md){ .md-button .md-button--primary }
+[MOOS-IvP Reference :fontawesome-solid-robot:](../moos_ivp){ .md-button .md-button--primary }
 
 ## If you are coming from MOOS-IvP
 
