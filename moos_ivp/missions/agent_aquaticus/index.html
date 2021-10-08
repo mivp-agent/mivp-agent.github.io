@@ -872,7 +872,7 @@
 <p>Vehicles take a number of <strong>required</strong> parameters to launch.</p>
 <ul>
 <li><code>team</code>: Can take on the value of <code>red</code> or <code>blue</code>. This parameter, among other things, will determine the starting position of the vehicle.</li>
-<li><code>role</code>: Can take on the value of <code>agent</code> or <code>drone</code>. Determines what if <code>BHV_Agent</code> will be spawned on the vehicle.</li>
+<li><code>role</code>: Can take on the value of <code>agent</code> or <code>drone</code>. Determines what if <a href="../../bhv_agent/">BHV_Agent</a> will be spawned on the vehicle.</li>
 <li><code>id</code>: Currently values 11-15 and 21-25 (inclusive) are supported for <code>agent</code>s and <code>drone</code>s respectively these, along with role, determine the <code>vname</code> of the vehicle. Vehicles will only be able to tag a vehicle with corresponding least significant digit (e.g. <code>drone_21</code> can tag <code>agent_11</code> and not <code>agent_12</code>)</li>
 </ul>
 <div class="admonition note">
@@ -911,7 +911,7 @@
 <p>MOOS-IvP behaviors are what should determine the actions of a robot. These can either be what are referred to as "hard coded behaviors" or those that are produced by <a href="../../bhv_agent/">BHV_Agent</a>. If extending the behavior file please use <a href="https://oceanai.mit.edu/ivpman/pmwiki/pmwiki.php?n=Helm.HelmAutonomy">this page</a> as a reference.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Currently the <code>BHV_Agent</code> behavior is always running when the <code>MODE == ACTIVE</code>. This important as this contains the code which communicates with python.</p>
+<p>Currently the <a href="../../bhv_agent/">BHV_Agent</a> behavior is always running when the <code>MODE == ACTIVE</code>. This important as this contains the code which communicates with python.</p>
 </div>
 <p>For hard coded behaviors, the below config block shows that anytime the <code>ACTION != AGENT</code> (as set when <code>role</code> is set to <code>agent</code> in the launch script) and <code>MODE == ACTIVE</code> the vehicle will return to their flag when they either have the flag or are tagged.</p>
 <pre><code>set MODE     = RETURN_BASE {
