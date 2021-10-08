@@ -16,7 +16,7 @@ Example simulation launch script can be seen [here](https://github.com/CarterFen
 Vehicles take a number of **required** parameters to launch.
 
 - `team`: Can take on the value of `red` or `blue`. This parameter, among other things, will determine the starting position of the vehicle.
-- `role`: Can take on the value of `agent` or `drone`. Determines what if `BHV_Agent` will be spawned on the vehicle.
+- `role`: Can take on the value of `agent` or `drone`. Determines what if [BHV_Agent](../bhv_agent.md) will be spawned on the vehicle.
 - `id`: Currently values 11-15 and 21-25 (inclusive) are supported for `agent`s and `drone`s respectively these, along with role, determine the `vname` of the vehicle. Vehicles will only be able to tag a vehicle with corresponding least significant digit (e.g. `drone_21` can tag `agent_11` and not `agent_12`)
 
 !!! Note
@@ -66,7 +66,7 @@ Shore side takes only **optional** parameters.
 MOOS-IvP behaviors are what should determine the actions of a robot. These can either be what are referred to as "hard coded behaviors" or those that are produced by [BHV_Agent](../bhv_agent.md). If extending the behavior file please use [this page](https://oceanai.mit.edu/ivpman/pmwiki/pmwiki.php?n=Helm.HelmAutonomy) as a reference.
 
 !!! Note 
-    Currently the `BHV_Agent` behavior is always running when the `MODE == ACTIVE`. This important as this contains the code which communicates with python.
+    Currently the [BHV_Agent](../bhv_agent.md) behavior is always running when the `MODE == ACTIVE`. This important as this contains the code which communicates with python.
 
 For hard coded behaviors, the below config block shows that anytime the `ACTION != AGENT` (as set when `role` is set to `agent` in the launch script) and `MODE == ACTIVE` the vehicle will return to their flag when they either have the flag or are tagged.
 

@@ -96,4 +96,4 @@ Once the state is outputted from `MissionManager`, it will be in a python dictio
 
 ## BHV_Agent and pEpisodeManager
 
-`BHV_Agent` will automatically collect data from `pEpisodeManager` if it is present and forward that data to the python model. See the (MissionMessage)[api_pages/mission_message.md] for information on how to access this.
+`BHV_Agent` will automatically collect data from [pEpisodeManager](episode_manager.md) if it is present and forward that data to the python model. See the (MissionMessage)[api_pages/mission_message.md] for information on how to access this.

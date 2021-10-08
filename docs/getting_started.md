@@ -29,7 +29,7 @@ Look at the "QTable" example. This implements a reinforcement learning [q-table]
 [QTable :fontawesome-brands-readme:](https://github.com/CarterFendley/moos-ivp-agent/tree/main/examples/QTable){ .md-button }
 
 !!! Note "If you came from the MOOS-IvP section:"
-    The associated MOOS-IvP mission files which are in that directory are based on the moos-ivp-agent's [AgentAquaticus](https://github.com/CarterFendley/moos-ivp-agent/tree/main/missions/AgentAquaticus) which allows for spawning of multiple vehicles in one MOOS-IvP simulation during training time. A good config block to look at is that for `pEpisodeManager` which manages the resetting of vehicles to form episodes of training.
+    The associated MOOS-IvP mission files which are in that directory are based on the moos-ivp-agent's [AgentAquaticus](https://github.com/CarterFendley/moos-ivp-agent/tree/main/missions/AgentAquaticus) which allows for spawning of multiple vehicles in one MOOS-IvP simulation during training time. A good config block to look at is that for [pEpisodeManager](moos_ivp/episode_manager.md) which manages the resetting of vehicles to form episodes of training.
 
 ## Hi Joe :wave:
 
