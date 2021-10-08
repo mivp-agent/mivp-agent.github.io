@@ -479,6 +479,53 @@
 
             
           
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_4" data-md-state="indeterminate" type="checkbox" id="__nav_3_4" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_4">
+          Aquaticus
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Aquaticus" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_4">
+          <span class="md-nav__icon md-icon"></span>
+          Aquaticus
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../aquaticus/field_discretizer.md" class="md-nav__link">
+        FieldDiscretizer
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -496,7 +543,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" data-md-state="indeterminate" type="checkbox" id="__nav_4" checked>
       
       
       
@@ -550,6 +597,81 @@
       <a href="../../moos_ivp/episode_manager/" class="md-nav__link">
         pEpisodeManager
       </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../moos_ivp/flag_mgr_agent.md" class="md-nav__link">
+        uFldFlagManagerAgent
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../moos_ivp/tag_mgr_agent.md" class="md-nav__link">
+        uFldTagManagerAgent
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_6" data-md-state="indeterminate" type="checkbox" id="__nav_4_6" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_6">
+          Missions
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Missions" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_6">
+          <span class="md-nav__icon md-icon"></span>
+          Missions
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../moos_ivp/missions/agent_aquaticus.md" class="md-nav__link">
+        AgentAquaticus
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -731,19 +853,19 @@ with MissionManager() as mgr:
         <details class="quote">
           <summary>Source code in <code>mivp_agent/manager.py</code></summary>
           <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">are_present</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">vnames</span><span class="p">):</span>
-  <span class="sd">&#39;&#39;&#39;</span>
-<span class="sd">  Used to see if a specified list of vehicles has connected to the `MissionManager` instance yet.</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    Used to see if a specified list of vehicles has connected to the `MissionManager` instance yet.</span>
 
-<span class="sd">  See also: [`wait_for()`][mivp_agent.manager.MissionManager.wait_for]</span>
+<span class="sd">    See also: [`wait_for()`][mivp_agent.manager.MissionManager.wait_for]</span>
 
-<span class="sd">  Args:</span>
-<span class="sd">    vnames (iterable): A list / tuple of `str` values to look for</span>
-<span class="sd">  &#39;&#39;&#39;</span>
-  <span class="k">for</span> <span class="n">vname</span> <span class="ow">in</span> <span class="n">vnames</span><span class="p">:</span>
-    <span class="k">with</span> <span class="bp">self</span><span class="o">.</span><span class="n">_vname_lock</span><span class="p">:</span>
-      <span class="k">if</span> <span class="n">vname</span> <span class="ow">not</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_vnames</span><span class="p">:</span>
-        <span class="k">return</span> <span class="kc">False</span>
-  <span class="k">return</span> <span class="kc">True</span>
+<span class="sd">    Args:</span>
+<span class="sd">      vnames (iterable): A list / tuple of `str` values to look for</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    <span class="k">for</span> <span class="n">vname</span> <span class="ow">in</span> <span class="n">vnames</span><span class="p">:</span>
+        <span class="k">with</span> <span class="bp">self</span><span class="o">.</span><span class="n">_vname_lock</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">vname</span> <span class="ow">not</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_vnames</span><span class="p">:</span>
+                <span class="k">return</span> <span class="kc">False</span>
+    <span class="k">return</span> <span class="kc">True</span>
 </code></pre></div>
         </details>
     </div>
@@ -784,12 +906,12 @@ with MissionManager() as mgr:
         <details class="quote">
           <summary>Source code in <code>mivp_agent/manager.py</code></summary>
           <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">episode_nums</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-  <span class="sd">&#39;&#39;&#39;</span>
-<span class="sd">  Returns:</span>
-<span class="sd">    dict: A key, value pair maping vnames to the episode numbers of the `pEpisodeManager` app on that vehicle</span>
-<span class="sd">  &#39;&#39;&#39;</span>
-  <span class="k">with</span> <span class="bp">self</span><span class="o">.</span><span class="n">_emn_lock</span><span class="p">:</span>
-    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_episode_manager_nums</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    Returns:</span>
+<span class="sd">      dict: A key, value pair maping vnames to the episode numbers of the `pEpisodeManager` app on that vehicle</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    <span class="k">with</span> <span class="bp">self</span><span class="o">.</span><span class="n">_emn_lock</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_episode_manager_nums</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
 </code></pre></div>
         </details>
     </div>
@@ -849,18 +971,18 @@ with MissionManager() as mgr:
         <details class="quote">
           <summary>Source code in <code>mivp_agent/manager.py</code></summary>
           <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">episode_state</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">vname</span><span class="p">):</span>
-  <span class="sd">&#39;&#39;&#39;</span>
-<span class="sd">  This is used to interrogate the state of a connected vehicle&#39;s `pEpisodeManager`</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    This is used to interrogate the state of a connected vehicle&#39;s `pEpisodeManager`</span>
 
-<span class="sd">  Args:</span>
-<span class="sd">    vname (str): the vname of the vehicle</span>
+<span class="sd">    Args:</span>
+<span class="sd">      vname (str): the vname of the vehicle</span>
 
-<span class="sd">  Returns:</span>
-<span class="sd">    str: The state of the `pEpisodeManager` on the vehicle </span>
-<span class="sd">  &#39;&#39;&#39;</span>
-  <span class="k">with</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ems_lock</span><span class="p">:</span>
-    <span class="c1"># Should be all strings so no reference odd ness</span>
-    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_episode_manager_states</span><span class="p">[</span><span class="n">vname</span><span class="p">]</span>
+<span class="sd">    Returns:</span>
+<span class="sd">      str: The state of the `pEpisodeManager` on the vehicle </span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    <span class="k">with</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ems_lock</span><span class="p">:</span>
+        <span class="c1"># Should be all strings so no reference odd ness</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_episode_manager_states</span><span class="p">[</span><span class="n">vname</span><span class="p">]</span>
 </code></pre></div>
         </details>
     </div>
@@ -937,35 +1059,35 @@ with MissionManager() as mgr:
         <details class="quote">
           <summary>Source code in <code>mivp_agent/manager.py</code></summary>
           <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">get_message</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">block</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
-  <span class="sd">&#39;&#39;&#39;</span>
-<span class="sd">  Used as the primary method for receiving data from `BHV_Agent`.</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    Used as the primary method for receiving data from `BHV_Agent`.</span>
 
-<span class="sd">  **NOTE:** Messages **MUST** be responded to as `BHV_Agent` will not send another update until it has a response to the last.</span>
+<span class="sd">    **NOTE:** Messages **MUST** be responded to as `BHV_Agent` will not send another update until it has a response to the last.</span>
 
-<span class="sd">  Args:</span>
-<span class="sd">    block (bool): A boolean specifying if the method will wait until a message present or return immediately</span>
+<span class="sd">    Args:</span>
+<span class="sd">      block (bool): A boolean specifying if the method will wait until a message present or return immediately</span>
 
-<span class="sd">  Returns:</span>
-<span class="sd">    obj: A instance of [`MissionMessage()`][mivp_agent.manager.MissionMessage] or `None` depending on the blocking behavior</span>
+<span class="sd">    Returns:</span>
+<span class="sd">      obj: A instance of [`MissionMessage()`][mivp_agent.manager.MissionMessage] or `None` depending on the blocking behavior</span>
 
-<span class="sd">  Example:</span>
-<span class="sd">    ```</span>
-<span class="sd">      msg = mgr.get_message()</span>
+<span class="sd">    Example:</span>
+<span class="sd">      ```</span>
+<span class="sd">        msg = mgr.get_message()</span>
 
-<span class="sd">      NAV_X = msg.state[&#39;NAV_X&#39;]</span>
-<span class="sd">      NAV_Y = msg.state[&#39;NAV_Y&#39;]</span>
+<span class="sd">        NAV_X = msg.state[&#39;NAV_X&#39;]</span>
+<span class="sd">        NAV_Y = msg.state[&#39;NAV_Y&#39;]</span>
 
-<span class="sd">      # ...</span>
-<span class="sd">      # Some processing</span>
-<span class="sd">      # ...</span>
+<span class="sd">        # ...</span>
+<span class="sd">        # Some processing</span>
+<span class="sd">        # ...</span>
 
-<span class="sd">      msg.act({</span>
-<span class="sd">        &#39;speed&#39;: 1.0</span>
-<span class="sd">        &#39;course&#39;: 180.0</span>
-<span class="sd">      })</span>
-<span class="sd">    ```</span>
-<span class="sd">  &#39;&#39;&#39;</span>
-  <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_msg_queue</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">block</span><span class="o">=</span><span class="n">block</span><span class="p">)</span>
+<span class="sd">        msg.act({</span>
+<span class="sd">          &#39;speed&#39;: 1.0</span>
+<span class="sd">          &#39;course&#39;: 180.0</span>
+<span class="sd">        })</span>
+<span class="sd">      ```</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_msg_queue</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">block</span><span class="o">=</span><span class="n">block</span><span class="p">)</span>
 </code></pre></div>
         </details>
     </div>
@@ -1005,11 +1127,11 @@ with MissionManager() as mgr:
         <details class="quote">
           <summary>Source code in <code>mivp_agent/manager.py</code></summary>
           <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">get_vehicle_count</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-  <span class="sd">&#39;&#39;&#39;</span>
-<span class="sd">  Returns:</span>
-<span class="sd">    int: The amount of vehicles that have connected to this instance of `MissionManager`</span>
-<span class="sd">  &#39;&#39;&#39;</span>
-  <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_vehicle_count</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    Returns:</span>
+<span class="sd">      int: The amount of vehicles that have connected to this instance of `MissionManager`</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_vehicle_count</span>
 </code></pre></div>
         </details>
     </div>
@@ -1031,8 +1153,7 @@ with MissionManager() as mgr:
 
     <div class="doc doc-contents ">
 
-      <p>It is <strong>not recommended</strong> to use this method directly. Instead, consider using this class with
-the python context manager. This method starts a thread to read from the <code>ModelBridgeServer</code>.</p>
+      <p>It is <strong>not recommended</strong> to use this method directly. Instead, consider using this class with the python context manager. This method starts a thread to read from the <code>ModelBridgeServer</code>.</p>
 
 <p><strong>Returns:</strong></p>
 <table>
@@ -1052,20 +1173,19 @@ the python context manager. This method starts a thread to read from the <code>M
         <details class="quote">
           <summary>Source code in <code>mivp_agent/manager.py</code></summary>
           <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">start</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-  <span class="sd">&#39;&#39;&#39;</span>
-<span class="sd">  It is **not recommended** to use this method directly. Instead, consider using this class with</span>
-<span class="sd">  the python context manager. This method starts a thread to read from the `ModelBridgeServer`.</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    It is **not recommended** to use this method directly. Instead, consider using this class with the python context manager. This method starts a thread to read from the `ModelBridgeServer`.</span>
 
-<span class="sd">  Returns:</span>
-<span class="sd">    bool: False if thread has already been started, True otherwise</span>
-<span class="sd">  &#39;&#39;&#39;</span>
-  <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_thread</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
-    <span class="k">return</span> <span class="kc">False</span>
+<span class="sd">    Returns:</span>
+<span class="sd">      bool: False if thread has already been started, True otherwise</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_thread</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">return</span> <span class="kc">False</span>
 
-  <span class="bp">self</span><span class="o">.</span><span class="n">_thread</span> <span class="o">=</span> <span class="n">Thread</span><span class="p">(</span><span class="n">target</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_server_thread</span><span class="p">,</span> <span class="n">daemon</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-  <span class="bp">self</span><span class="o">.</span><span class="n">_thread</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">_thread</span> <span class="o">=</span> <span class="n">Thread</span><span class="p">(</span><span class="n">target</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_server_thread</span><span class="p">,</span> <span class="n">daemon</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">_thread</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
 
-  <span class="k">return</span> <span class="kc">True</span>
+    <span class="k">return</span> <span class="kc">True</span>
 </code></pre></div>
         </details>
     </div>
@@ -1116,15 +1236,15 @@ the python context manager. This method starts a thread to read from the <code>M
         <details class="quote">
           <summary>Source code in <code>mivp_agent/manager.py</code></summary>
           <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">wait_for</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">vnames</span><span class="p">,</span> <span class="n">sleep</span><span class="o">=</span><span class="mf">0.1</span><span class="p">):</span>
-  <span class="sd">&#39;&#39;&#39;</span>
-<span class="sd">  Used to block until a specified list of vehicles has connect to the `MissionManager` instance.</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    Used to block until a specified list of vehicles has connect to the `MissionManager` instance.</span>
 
-<span class="sd">  Args:</span>
-<span class="sd">    vnames (iterable): A list / tuple of `str` values to look for</span>
-<span class="sd">    sleep (float): Amount of time in seconds to sleep for between checks</span>
-<span class="sd">  &#39;&#39;&#39;</span>
-  <span class="k">while</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">are_present</span><span class="p">(</span><span class="n">vnames</span><span class="p">):</span>
-    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">sleep</span><span class="p">)</span>
+<span class="sd">    Args:</span>
+<span class="sd">      vnames (iterable): A list / tuple of `str` values to look for</span>
+<span class="sd">      sleep (float): Amount of time in seconds to sleep for between checks</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    <span class="k">while</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">are_present</span><span class="p">(</span><span class="n">vnames</span><span class="p">):</span>
+        <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">sleep</span><span class="p">)</span>
 </code></pre></div>
         </details>
     </div>
@@ -1211,7 +1331,7 @@ the python context manager. This method starts a thread to read from the <code>M
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tabs", "navigation.tabs.sticky"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.f8263e09.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.expand", "navigation.instant", "navigation.tabs", "navigation.tabs.sticky"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.f8263e09.min.js", "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.4fc53ad4.min.js"></script>
