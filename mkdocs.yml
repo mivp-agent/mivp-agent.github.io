@@ -5,18 +5,24 @@ plugins:
     - mkdocstrings:
         watch:
             - mivp_agent
-    - search  
+    - search
 nav:
     - Home: index.md
     - Getting Started: getting_started.md
     - Python API:
         - Index: python/index.md
         - MissionManager: python/mission_manager.md
-        - MissionMessage: python/mission_message.md 
+        - MissionMessage: python/mission_message.md
+        - Aquaticus:
+            - FieldDiscretizer: python/aquaticus/field_discretizer.md
     - MOOS-IvP Reference:
         - Index: moos_ivp/index.md
         - BHV_Agent: moos_ivp/bhv_agent.md
         - pEpisodeManager: moos_ivp/episode_manager.md
+        - uFldFlagManagerAgent: moos_ivp/flag_mgr_agent.md
+        - uFldTagManagerAgent: moos_ivp/tag_mgr_agent.md
+        - Missions:
+            - AgentAquaticus: moos_ivp/missions/agent_aquaticus.md
 
 theme:
     name: "material"
@@ -25,6 +31,7 @@ theme:
     icon:
         repo: fontawesome/brands/github
     features:
+        - navigation.expand
         - navigation.instant
         - navigation.tabs
         - navigation.tabs.sticky

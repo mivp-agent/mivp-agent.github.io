@@ -2,6 +2,8 @@ name: mivp-agent-web
 dependencies:
   - python=3.8
   - pip
+  - numpy
+  - matplotlib
   - pip:
     - mkdocs==1.2.2
     - mkdocs-material==7.3.0
