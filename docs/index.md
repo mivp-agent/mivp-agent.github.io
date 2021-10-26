@@ -1,7 +1,5 @@
 # MOOS-IvP Agent
-
 [![C++ Build](https://github.com/CarterFendley/moos-ivp-agent/actions/workflows/build-moos-ivp-agent.yml/badge.svg)](https://github.com/CarterFendley/moos-ivp-agent/actions/workflows/build-moos-ivp-agent.yml)
-
 ## Overview
 
 Model agnostic machine learning tooling for [MOOS-IvP](https://oceanai.mit.edu/moos-ivp/pmwiki/pmwiki.php). Inspired by [moos-ivp-pLearn](https://github.com/mnovitzky/moos-ivp-pLearn) this project was designed to allow for training of python ML agents for [Project Aquaticus](https://oceanai.mit.edu/aquaticus/pmwiki/pmwiki.php?n=Main.HomePage) while also providing generalized software to use with any MOOS-IvP project. 
