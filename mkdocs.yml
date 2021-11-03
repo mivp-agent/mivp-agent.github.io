@@ -15,6 +15,7 @@ nav:
         - MissionMessage: python/mission_message.md
         - Aquaticus:
             - FieldDiscretizer: python/aquaticus/field_discretizer.md
+            - DiscreteFieldGrapher: python/aquaticus/dfield_grapher.md
     - MOOS-IvP Reference:
         - Index: moos_ivp/index.md
         - BHV_Agent: moos_ivp/bhv_agent.md

@@ -4,4 +4,5 @@
 - [MissionMessage](mission_message.md)
 - Aquaticus
     - [FieldDiscretizer](aquaticus/field_discretizer.md)
+    - [DiscreteFieldGrapher](aquaticus/dfield_grapher.md)
 
