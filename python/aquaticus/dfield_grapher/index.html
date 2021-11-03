@@ -9,14 +9,14 @@
       
       
       
-        <link rel="canonical" href="http://mivp-agent.github.io/python/aquaticus/field_discretizer/">
+        <link rel="canonical" href="http://mivp-agent.github.io/python/aquaticus/dfield_grapher/">
       
       <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.3.0">
     
     
       
-        <title>FieldDiscretizer - mivp-agent</title>
+        <title>DiscreteFieldGrapher - mivp-agent</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#reference-for-fielddiscretizer" class="md-skip">
+        <a href="#reference-for-discretefieldgrapher" class="md-skip">
           Skip to content
         </a>
       
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              FieldDiscretizer
+              DiscreteFieldGrapher
             
           </span>
         </div>
@@ -422,6 +422,20 @@
               
   
   
+  
+    <li class="md-nav__item">
+      <a href="../field_discretizer/" class="md-nav__link">
+        FieldDiscretizer
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
     
   
   
@@ -434,12 +448,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          FieldDiscretizer
+          DiscreteFieldGrapher
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        FieldDiscretizer
+        DiscreteFieldGrapher
       </a>
       
         
@@ -457,29 +471,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#mivp_agent.aquaticus.field.FieldDiscretizer" class="md-nav__link">
-    mivp_agent.aquaticus.field.FieldDiscretizer
+  <a href="#mivp_agent.aquaticus.field.DiscreteFieldGrapher" class="md-nav__link">
+    mivp_agent.aquaticus.field.DiscreteFieldGrapher
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#mivp_agent.aquaticus.field.FieldDiscretizer.__init__" class="md-nav__link">
+  <a href="#mivp_agent.aquaticus.field.DiscreteFieldGrapher.__init__" class="md-nav__link">
     __init__()
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#mivp_agent.aquaticus.field.FieldDiscretizer.to_discrete_idx" class="md-nav__link">
-    to_discrete_idx()
+  <a href="#mivp_agent.aquaticus.field.DiscreteFieldGrapher.init_vehicle" class="md-nav__link">
+    init_vehicle()
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#mivp_agent.aquaticus.field.FieldDiscretizer.to_discrete_point" class="md-nav__link">
-    to_discrete_point()
+  <a href="#mivp_agent.aquaticus.field.DiscreteFieldGrapher.update_vehicle" class="md-nav__link">
+    update_vehicle()
   </a>
   
 </li>
@@ -488,20 +502,6 @@
   
 </nav>
       
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../dfield_grapher/" class="md-nav__link">
-        DiscreteFieldGrapher
-      </a>
     </li>
   
 
@@ -697,29 +697,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#mivp_agent.aquaticus.field.FieldDiscretizer" class="md-nav__link">
-    mivp_agent.aquaticus.field.FieldDiscretizer
+  <a href="#mivp_agent.aquaticus.field.DiscreteFieldGrapher" class="md-nav__link">
+    mivp_agent.aquaticus.field.DiscreteFieldGrapher
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#mivp_agent.aquaticus.field.FieldDiscretizer.__init__" class="md-nav__link">
+  <a href="#mivp_agent.aquaticus.field.DiscreteFieldGrapher.__init__" class="md-nav__link">
     __init__()
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#mivp_agent.aquaticus.field.FieldDiscretizer.to_discrete_idx" class="md-nav__link">
-    to_discrete_idx()
+  <a href="#mivp_agent.aquaticus.field.DiscreteFieldGrapher.init_vehicle" class="md-nav__link">
+    init_vehicle()
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#mivp_agent.aquaticus.field.FieldDiscretizer.to_discrete_point" class="md-nav__link">
-    to_discrete_point()
+  <a href="#mivp_agent.aquaticus.field.DiscreteFieldGrapher.update_vehicle" class="md-nav__link">
+    update_vehicle()
   </a>
   
 </li>
@@ -736,23 +736,22 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/mivp-agent/mivp-agent.github.io/tree/master/docs/python/aquaticus/field_discretizer.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/mivp-agent/mivp-agent.github.io/tree/master/docs/python/aquaticus/dfield_grapher.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <h1 id="reference-for-fielddiscretizer">Reference for <code>FieldDiscretizer</code></h1>
+                <h1 id="reference-for-discretefieldgrapher">Reference for <code>DiscreteFieldGrapher</code></h1>
 
 
   <div class="doc doc-object doc-class">
 
-<a id="mivp_agent.aquaticus.field.FieldDiscretizer"></a>
+<a id="mivp_agent.aquaticus.field.DiscreteFieldGrapher"></a>
     <div class="doc doc-contents first">
 
-      <p>This utility is used to transform the continuous 2d spaces into a 1d discretized space with variable resolution. The method of doing so was adapted from <a href="https://stackoverflow.com/questions/62778939/python-fastest-way-to-map-continuous-coordinates-to-discrete-grid">this source</a>. By default it used the MIT aquaticus field lines to define the 2d space.</p>
-<p>The discrete space is a 0...n space where 0 represents an input that is <strong>outside</strong> the continuous space.</p>
-<p>See 
-<a href="#mivp_agent.aquaticus.field.FieldDiscretizer.to_discrete_idx"><code>to_discrete_idx()</code></a> for the primary means of translation.</p>
+      <p>This utility uses matplotlib to graph vehicles in descrete positions as defined by an instance of <a href="../field_discretizer/#mivp_agent.aquaticus.field.FieldDiscretizer"><code>FieldDiscretizer</code></a></p>
+<p><strong>WARNING:</strong> This class is <em>EXTREMELY</em> ineffecient and should not be used in a loop which timing is important. Its primary use is for debuging.</p>
+<p>You can see a example of how to use this visualizer with the FieldDiscretizer <a href="https://github.com/CarterFendley/moos-ivp-agent/blob/main/examples/DiscreteField/run.py">here</a>.</p>
 
 
 
@@ -771,8 +770,8 @@
 
 
 
-<h2 id="mivp_agent.aquaticus.field.FieldDiscretizer.__init__" class="doc doc-heading">
-<code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">resolution</span><span class="o">=</span><span class="mi">6</span><span class="p">)</span></code>
+<h2 id="mivp_agent.aquaticus.field.DiscreteFieldGrapher.__init__" class="doc doc-heading">
+<code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">discretizer</span><span class="p">)</span></code>
 
   <span class="doc doc-properties">
       <small class="doc doc-property doc-property-special"><code>special</code></small>
@@ -795,62 +794,151 @@
   </thead>
   <tbody>
       <tr>
-        <td><code>resolution</code></td>
-        <td><code>int</code></td>
-        <td><p>This was named <strong>poorly</strong>. It is not the resolution but the opposite. This variable represents the step size used between discrete points. Incresing this parameter will result in a discrete space of smaller size.</p></td>
-        <td><code>6</code></td>
+        <td><code>discretizer</code></td>
+        <td><code>FieldDiscretizer</code></td>
+        <td><p>Used to plot discrete points and during vehicle initalization.</p></td>
+        <td><em>required</em></td>
       </tr>
   </tbody>
 </table>
         <details class="quote">
           <summary>Source code in <code>mivp_agent/aquaticus/field.py</code></summary>
-          <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">resolution</span><span class="o">=</span><span class="mi">6</span><span class="p">):</span>
+          <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">discretizer</span><span class="p">):</span>
   <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">  Args:</span>
-<span class="sd">    resolution (int): This was named **poorly**. It is not the resolution but the opposite. This variable represents the step size used between discrete points. Incresing this parameter will result in a discrete space of smaller size.</span>
+<span class="sd">    discretizer (FieldDiscretizer): Used to plot discrete points and during vehicle initalization.</span>
 <span class="sd">  &#39;&#39;&#39;</span>
-  <span class="c1"># Find the min/max x and y in the field</span>
-  <span class="nb">min</span> <span class="o">=</span> <span class="kc">None</span>
-  <span class="nb">max</span> <span class="o">=</span> <span class="kc">None</span>
-  <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">FIELD_CORNERS</span><span class="p">:</span>
-    <span class="k">if</span> <span class="nb">min</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
-      <span class="nb">min</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">c</span><span class="p">)</span> <span class="c1"># Change to list for mutability</span>
-    <span class="k">else</span><span class="p">:</span>
-      <span class="k">if</span> <span class="nb">min</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">c</span><span class="p">[</span><span class="mi">0</span><span class="p">]:</span>
-        <span class="nb">min</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">c</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-      <span class="k">elif</span> <span class="nb">min</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">c</span><span class="p">[</span><span class="mi">1</span><span class="p">]:</span>
-        <span class="nb">min</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">c</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+  <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">discretizer</span><span class="p">,</span> <span class="n">FieldDiscretizer</span><span class="p">),</span> <span class="s1">&#39;discretizer is of wrong type&#39;</span>
 
-    <span class="k">if</span> <span class="nb">max</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
-      <span class="nb">max</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
-    <span class="k">else</span><span class="p">:</span>
-      <span class="k">if</span> <span class="nb">max</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">c</span><span class="p">[</span><span class="mi">0</span><span class="p">]:</span>
-        <span class="nb">max</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">c</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-      <span class="k">if</span> <span class="nb">max</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">c</span><span class="p">[</span><span class="mi">1</span><span class="p">]:</span>
-        <span class="nb">max</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">c</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+  <span class="c1"># Store discretizer</span>
+  <span class="bp">self</span><span class="o">.</span><span class="n">_discretizer</span> <span class="o">=</span> <span class="n">discretizer</span>
 
-  <span class="c1"># Define the offset (starting point) for our grid</span>
-  <span class="bp">self</span><span class="o">.</span><span class="n">_offset</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="nb">min</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="nb">min</span><span class="p">[</span><span class="mi">1</span><span class="p">]])</span>
-  <span class="c1"># Define the spacing (resolution) for the grid</span>
-  <span class="bp">self</span><span class="o">.</span><span class="n">_spacing</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">resolution</span><span class="p">,</span> <span class="n">resolution</span><span class="p">])</span>
+  <span class="c1"># Construct field plot</span>
+  <span class="n">plt</span><span class="o">.</span><span class="n">ion</span><span class="p">()</span>
+  <span class="bp">self</span><span class="o">.</span><span class="n">_field_fig</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_field_ax</span> <span class="o">=</span> <span class="n">construct_field_figure</span><span class="p">()</span>
 
-  <span class="c1"># Create map between grid points and an index (different than the reference&#39;s use of index)</span>
-  <span class="n">index</span> <span class="o">=</span> <span class="mi">1</span>
-  <span class="bp">self</span><span class="o">.</span><span class="n">_point_idx_map</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="kc">None</span><span class="p">:</span> <span class="mi">0</span> <span class="c1"># Used for points off the field</span>
+  <span class="c1"># Add grid points to field graph</span>
+  <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_discretizer</span><span class="o">.</span><span class="n">_point_idx_map</span><span class="p">:</span>
+    <span class="c1"># Ignore the entry used for out of field points</span>
+    <span class="k">if</span> <span class="n">p</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+      <span class="k">continue</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">_field_ax</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="n">p</span><span class="p">[</span><span class="mi">0</span><span class="p">]],</span> <span class="p">[</span><span class="n">p</span><span class="p">[</span><span class="mi">1</span><span class="p">]],</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;.&#39;</span><span class="p">,</span> <span class="n">markersize</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;dimgray&#39;</span><span class="p">)</span>
+
+  <span class="c1"># Draw for first time</span>
+  <span class="bp">self</span><span class="o">.</span><span class="n">_field_fig</span><span class="o">.</span><span class="n">canvas</span><span class="o">.</span><span class="n">draw</span><span class="p">()</span>
+
+  <span class="c1"># Create data structure for storing vehicle&#39;s locations</span>
+  <span class="bp">self</span><span class="o">.</span><span class="n">_vehicles</span> <span class="o">=</span> <span class="p">{}</span>
+</code></pre></div>
+        </details>
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-method">
+
+
+
+<h2 id="mivp_agent.aquaticus.field.DiscreteFieldGrapher.init_vehicle" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">init_vehicle</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">color</span><span class="p">,</span> <span class="n">start_pos</span><span class="o">=</span><span class="p">(</span><span class="mi">30</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span> <span class="n">plot</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span></code>
+
+
+</h2>
+
+    <div class="doc doc-contents ">
+
+      <p>Initalizes a vehicle specified by <code>name</code> in the DiscreteFieldGrapher class and it's matplotlib plot. To update the vehicles initalized by this method see 
+<a href="#mivp_agent.aquaticus.field.DiscreteFieldGrapher.update_vehicle"><code>update_vehicle()</code></a>.</p>
+
+<p><strong>Parameters:</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+      <th>Default</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td><code>name</code></td>
+        <td><code>str</code></td>
+        <td><p>The name (or key) to list the vehicle under.</p></td>
+        <td><em>required</em></td>
+      </tr>
+      <tr>
+        <td><code>color</code></td>
+        <td><code>str</code></td>
+        <td><p>A matplotlib <a href="https://matplotlib.org/stable/gallery/color/named_colors.html">named color</a>.</p></td>
+        <td><em>required</em></td>
+      </tr>
+      <tr>
+        <td><code>start_pos</code></td>
+        <td><code>tuple</code></td>
+        <td><p>A tuple where containing the x / y position to initally render the vehicle.</p></td>
+        <td><code>(30, 10)</code></td>
+      </tr>
+      <tr>
+        <td><code>plot</code></td>
+        <td><code>bool</code></td>
+        <td><p>A boolean indicating if the the plot should be redrawn after vehicle initalization.</p></td>
+        <td><code>True</code></td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Exceptions:</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td><code>RuntimeError</code></td>
+        <td><p>If the specified <code>name</code> has already been initalized.</p></td>
+      </tr>
+  </tbody>
+</table>
+        <details class="quote">
+          <summary>Source code in <code>mivp_agent/aquaticus/field.py</code></summary>
+          <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">init_vehicle</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">color</span><span class="p">,</span> <span class="n">start_pos</span><span class="o">=</span><span class="n">FIELD_OUT_BOUNDS_POINT</span><span class="p">,</span> <span class="n">plot</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+  <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">  Initalizes a vehicle specified by `name` in the DiscreteFieldGrapher class and it&#39;s matplotlib plot. To update the vehicles initalized by this method see </span>
+<span class="sd">  [`update_vehicle()`][mivp_agent.aquaticus.field.DiscreteFieldGrapher.update_vehicle].</span>
+
+<span class="sd">  Args:</span>
+<span class="sd">    name (str): The name (or key) to list the vehicle under.</span>
+<span class="sd">    color (str): A matplotlib [named color](https://matplotlib.org/stable/gallery/color/named_colors.html).</span>
+<span class="sd">    start_pos (tuple): A tuple where containing the x / y position to initally render the vehicle.</span>
+<span class="sd">    plot (bool): A boolean indicating if the the plot should be redrawn after vehicle initalization.</span>
+<span class="sd">  Raises:</span>
+<span class="sd">    RuntimeError: If the specified `name` has already been initalized.</span>
+<span class="sd">  &#39;&#39;&#39;</span>
+  <span class="k">if</span> <span class="n">name</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_vehicles</span><span class="p">:</span>
+    <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;FieldGrapher alread has vehicle named &quot;</span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s1">&quot;&#39;</span><span class="p">)</span>
+
+  <span class="k">if</span> <span class="n">start_pos</span> <span class="o">!=</span> <span class="n">FIELD_OUT_BOUNDS_POINT</span><span class="p">:</span>
+    <span class="n">start_pos</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_discretizer</span><span class="o">.</span><span class="n">to_discrete_point</span><span class="p">(</span>
+      <span class="n">start_pos</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span>
+      <span class="n">start_pos</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+    <span class="p">)</span>
+
+  <span class="bp">self</span><span class="o">.</span><span class="n">_vehicles</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;circle&#39;</span><span class="p">:</span> <span class="n">plt</span><span class="o">.</span><span class="n">Circle</span><span class="p">(</span><span class="n">start_pos</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">color</span><span class="p">),</span>
+    <span class="s1">&#39;label&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">_field_ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">start_pos</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="mi">3</span><span class="p">,</span> <span class="n">start_pos</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span><span class="mi">3</span><span class="p">,</span> <span class="n">name</span><span class="p">),</span>
+    <span class="s1">&#39;position&#39;</span><span class="p">:</span> <span class="n">start_pos</span>
   <span class="p">}</span>
-  <span class="bp">self</span><span class="o">.</span><span class="n">_idx_point_map</span> <span class="o">=</span> <span class="p">[</span><span class="kc">None</span><span class="p">]</span>
-  <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">min</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="nb">max</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">resolution</span><span class="p">):</span>
-    <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">min</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="nb">max</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">resolution</span><span class="p">):</span>
-      <span class="c1"># Add to map if in bounds </span>
-      <span class="k">if</span> <span class="n">in_bounds</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">])):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">_point_idx_map</span><span class="p">[(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)]</span> <span class="o">=</span> <span class="n">index</span>
-        <span class="n">index</span> <span class="o">+=</span> <span class="mi">1</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">_idx_point_map</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">))</span>
 
-  <span class="bp">self</span><span class="o">.</span><span class="n">space_size</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_point_idx_map</span><span class="p">)</span>
-  <span class="c1"># Sanity check</span>
-  <span class="k">assert</span> <span class="bp">self</span><span class="o">.</span><span class="n">space_size</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_idx_point_map</span><span class="p">)</span>
+  <span class="bp">self</span><span class="o">.</span><span class="n">_field_ax</span><span class="o">.</span><span class="n">add_artist</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_vehicles</span><span class="p">[</span><span class="n">name</span><span class="p">][</span><span class="s1">&#39;circle&#39;</span><span class="p">])</span>
+
+  <span class="k">if</span> <span class="n">plot</span><span class="p">:</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">_plot</span><span class="p">()</span>
 </code></pre></div>
         </details>
     </div>
@@ -859,20 +947,19 @@
 
 
 
-
   <div class="doc doc-object doc-method">
 
 
 
-<h2 id="mivp_agent.aquaticus.field.FieldDiscretizer.to_discrete_idx" class="doc doc-heading">
-<code class="highlight language-python"><span class="n">to_discrete_idx</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nav_x</span><span class="p">,</span> <span class="n">nav_y</span><span class="p">)</span></code>
+<h2 id="mivp_agent.aquaticus.field.DiscreteFieldGrapher.update_vehicle" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">update_vehicle</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">discrete_position</span><span class="p">,</span> <span class="n">plot</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span></code>
 
 
 </h2>
 
     <div class="doc doc-contents ">
 
-      <p>This method translates continuous x / y coordinates into discrete 0...n index. 0 indicates that the input was outside of the defined 2d space.</p>
+      <p>Used to update the position of a vehicle which has been previously initalized via <a href="#mivp_agent.aquaticus.field.DiscreteFieldGrapher.init_vehicle"><code>init_vehicle()</code></a></p>
 
 <p><strong>Parameters:</strong></p>
 <table>
@@ -886,20 +973,26 @@
   </thead>
   <tbody>
       <tr>
-        <td><code>nav_x</code></td>
-        <td><code>float</code></td>
-        <td><p>A continuous x coordinate</p></td>
+        <td><code>name</code></td>
+        <td><code>str</code></td>
+        <td><p>The name (or key) to list the vehicle under.</p></td>
         <td><em>required</em></td>
       </tr>
       <tr>
-        <td><code>nav_y</code></td>
-        <td><code>float</code></td>
-        <td><p>A continuous y coordinate</p></td>
+        <td><code>discrete_position</code></td>
+        <td><code>tuple</code></td>
+        <td><p>A tuple where containing the <strong>DISCRETE</strong> x / y position to render the vehicle at. This method <strong>will not</strong> pass the point through the discretizer.</p></td>
         <td><em>required</em></td>
+      </tr>
+      <tr>
+        <td><code>plot</code></td>
+        <td><code>bool</code></td>
+        <td><p>A boolean indicating if the the plot should be redrawn after vehicle update.</p></td>
+        <td><code>True</code></td>
       </tr>
   </tbody>
 </table>
-<p><strong>Returns:</strong></p>
+<p><strong>Exceptions:</strong></p>
 <table>
   <thead>
     <tr>
@@ -908,110 +1001,42 @@
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td><code>int</code></td>
-      <td><p>A discrete index corresponding to a unique point on the 2d discrete field.</p></td>
-    </tr>
+      <tr>
+        <td><code>RuntimeError</code></td>
+        <td><p>If the specified <code>name</code> has not been initalized previously.</p></td>
+      </tr>
   </tbody>
 </table>
         <details class="quote">
           <summary>Source code in <code>mivp_agent/aquaticus/field.py</code></summary>
-          <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">to_discrete_idx</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nav_x</span><span class="p">,</span> <span class="n">nav_y</span><span class="p">):</span>
+          <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">update_vehicle</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">discrete_position</span><span class="p">,</span> <span class="n">plot</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
   <span class="sd">&#39;&#39;&#39;</span>
-<span class="sd">  This method translates continuous x / y coordinates into discrete 0...n index. 0 indicates that the input was outside of the defined 2d space.</span>
+<span class="sd">  Used to update the position of a vehicle which has been previously initalized via [`init_vehicle()`][mivp_agent.aquaticus.field.DiscreteFieldGrapher.init_vehicle]</span>
 
 <span class="sd">  Args:</span>
-<span class="sd">    nav_x (float): A continuous x coordinate</span>
-<span class="sd">    nav_y (float): A continuous y coordinate</span>
+<span class="sd">    name (str): The name (or key) to list the vehicle under.</span>
+<span class="sd">    discrete_position (tuple): A tuple where containing the **DISCRETE** x / y position to render the vehicle at. This method **will not** pass the point through the discretizer.</span>
+<span class="sd">    plot (bool): A boolean indicating if the the plot should be redrawn after vehicle update.</span>
 
-<span class="sd">  Returns:</span>
-<span class="sd">    int: A discrete index corresponding to a unique point on the 2d discrete field.</span>
+<span class="sd">  Raises:</span>
+<span class="sd">    RuntimeError: If the specified `name` has not been initalized previously.</span>
 <span class="sd">  &#39;&#39;&#39;</span>
-  <span class="n">d</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">to_discrete_point</span><span class="p">(</span><span class="n">nav_x</span><span class="p">,</span> <span class="n">nav_y</span><span class="p">)</span>
-  <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_point_idx_map</span><span class="p">[</span><span class="n">d</span><span class="p">]</span>
-</code></pre></div>
-        </details>
-    </div>
+  <span class="k">if</span> <span class="n">name</span> <span class="ow">not</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_vehicles</span><span class="p">:</span>
+    <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;FieldGrapher cannot find vehicle with name &quot;</span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s1">&quot;&#39;</span><span class="p">)</span>
 
-  </div>
+  <span class="k">if</span> <span class="n">discrete_position</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="n">discrete_position</span> <span class="o">=</span> <span class="n">FIELD_OUT_BOUNDS_POINT</span>
 
+  <span class="c1"># Remove old label position</span>
+  <span class="bp">self</span><span class="o">.</span><span class="n">_vehicles</span><span class="p">[</span><span class="n">name</span><span class="p">][</span><span class="s1">&#39;label&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">set_visible</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
 
+  <span class="c1"># Update graphic</span>
+  <span class="bp">self</span><span class="o">.</span><span class="n">_vehicles</span><span class="p">[</span><span class="n">name</span><span class="p">][</span><span class="s1">&#39;circle&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">center</span> <span class="o">=</span> <span class="n">discrete_position</span>
+  <span class="bp">self</span><span class="o">.</span><span class="n">_vehicles</span><span class="p">[</span><span class="n">name</span><span class="p">][</span><span class="s1">&#39;label&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_field_ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">discrete_position</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">+</span><span class="mi">3</span><span class="p">,</span> <span class="n">discrete_position</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span><span class="mi">3</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
+  <span class="bp">self</span><span class="o">.</span><span class="n">_vehicles</span><span class="p">[</span><span class="n">name</span><span class="p">][</span><span class="s1">&#39;position&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">discrete_position</span>
 
-  <div class="doc doc-object doc-method">
-
-
-
-<h2 id="mivp_agent.aquaticus.field.FieldDiscretizer.to_discrete_point" class="doc doc-heading">
-<code class="highlight language-python"><span class="n">to_discrete_point</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nav_x</span><span class="p">,</span> <span class="n">nav_y</span><span class="p">)</span></code>
-
-
-</h2>
-
-    <div class="doc doc-contents ">
-
-      <p>This method translates continuous x / y coordinates into discrete x / y coordinates.</p>
-
-<p><strong>Parameters:</strong></p>
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Type</th>
-      <th>Description</th>
-      <th>Default</th>
-    </tr>
-  </thead>
-  <tbody>
-      <tr>
-        <td><code>nav_x</code></td>
-        <td><code>float</code></td>
-        <td><p>A continuous x coordinate</p></td>
-        <td><em>required</em></td>
-      </tr>
-      <tr>
-        <td><code>nav_y</code></td>
-        <td><code>float</code></td>
-        <td><p>A continuous y coordinate</p></td>
-        <td><em>required</em></td>
-      </tr>
-  </tbody>
-</table>
-<p><strong>Returns:</strong></p>
-<table>
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code>tuple/None</code></td>
-      <td><p>Will return a <code>tuple</code> with (x, y) of type <code>int</code> or <code>None</code> if the input is outside of the defined space.</p></td>
-    </tr>
-  </tbody>
-</table>
-        <details class="quote">
-          <summary>Source code in <code>mivp_agent/aquaticus/field.py</code></summary>
-          <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">to_discrete_point</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nav_x</span><span class="p">,</span> <span class="n">nav_y</span><span class="p">):</span>
-  <span class="sd">&#39;&#39;&#39;</span>
-<span class="sd">  This method translates continuous x / y coordinates into discrete x / y coordinates.</span>
-
-<span class="sd">  Args:</span>
-<span class="sd">    nav_x (float): A continuous x coordinate</span>
-<span class="sd">    nav_y (float): A continuous y coordinate</span>
-
-<span class="sd">  Returns:</span>
-<span class="sd">    tuple/None: Will return a `tuple` with (x, y) of type `int` or `None` if the input is outside of the defined space.</span>
-<span class="sd">  &#39;&#39;&#39;</span>
-  <span class="n">d</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_offset</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">((</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">nav_x</span><span class="p">,</span> <span class="n">nav_y</span><span class="p">])</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">_offset</span><span class="p">)</span> <span class="o">/</span> <span class="bp">self</span><span class="o">.</span><span class="n">_spacing</span><span class="p">)</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">_spacing</span>
-  <span class="n">d</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">d</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">))</span>
-
-  <span class="c1"># Handle out of feild positions</span>
-  <span class="k">if</span> <span class="n">d</span> <span class="ow">not</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_point_idx_map</span><span class="p">:</span>
-    <span class="k">return</span> <span class="kc">None</span>
-
-  <span class="k">return</span> <span class="n">d</span>
+  <span class="k">if</span> <span class="n">plot</span><span class="p">:</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">_plot</span><span class="p">()</span>
 </code></pre></div>
         </details>
     </div>
@@ -1046,7 +1071,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../../mission_message/" class="md-footer__link md-footer__link--prev" aria-label="Previous: MissionMessage" rel="prev">
+        <a href="../field_discretizer/" class="md-footer__link md-footer__link--prev" aria-label="Previous: FieldDiscretizer" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1055,20 +1080,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              MissionMessage
+              FieldDiscretizer
             </div>
           </div>
         </a>
       
       
         
-        <a href="../dfield_grapher/" class="md-footer__link md-footer__link--next" aria-label="Next: DiscreteFieldGrapher" rel="next">
+        <a href="../../../moos_ivp/" class="md-footer__link md-footer__link--next" aria-label="Next: Index" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              DiscreteFieldGrapher
+              Index
             </div>
           </div>
           <div class="md-footer__button md-icon">
