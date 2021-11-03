@@ -6,6 +6,11 @@ plugins:
         watch:
             - mivp_agent
     - search
+    - mkdocs-keywords:
+        keywords:
+            - Hello: hi
+            - Bye: bye
+            - Hello: hi2
 nav:
     - Home: index.md
     - Getting Started: getting_started.md
