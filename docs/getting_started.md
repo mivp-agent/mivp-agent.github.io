@@ -18,7 +18,7 @@ Currently the best way of getting started is to:
 
 I would recommend looking at the "ManagerExample" and look at the configuration blocks for the `BHV_Agent`. This behavior is one that does the actual connection to python land through a TCP socket.
 
-[ManagerExample :fontawesome-brands-readme:](https://github.com/CarterFendley/moos-ivp-agent/tree/main/examples/ManagerExample){ .md-button }
+[ManagerExample :fontawesome-brands-readme:](https://github.com/mivp-agent/moos-ivp-agent/tree/main/examples/ManagerExample){ .md-button }
 
 Then, focus on the python side of the more complex "QTable" mission bellow.
 
@@ -26,10 +26,10 @@ Then, focus on the python side of the more complex "QTable" mission bellow.
 
 Look at the "QTable" example. This implements a reinforcement learning [q-table](https://en.wikipedia.org/wiki/Q-learning). This example is trained on the [Project Aquaticus](https://oceanai.mit.edu/aquaticus/pmwiki/pmwiki.php?n=Main.HomePage) scenario. It's goal is to grab a flag in virtual game of capture flag. 
 
-[QTable :fontawesome-brands-readme:](https://github.com/CarterFendley/moos-ivp-agent/tree/main/examples/QTable){ .md-button }
+[QTable :fontawesome-brands-readme:](https://github.com/mivp-agent/moos-ivp-agent/tree/main/examples/QTable){ .md-button }
 
 !!! Note "If you came from the MOOS-IvP section:"
-    The associated MOOS-IvP mission files which are in that directory are based on the moos-ivp-agent's [AgentAquaticus](https://github.com/CarterFendley/moos-ivp-agent/tree/main/missions/AgentAquaticus) which allows for spawning of multiple vehicles in one MOOS-IvP simulation during training time. A good config block to look at is that for [pEpisodeManager](moos_ivp/episode_manager.md) which manages the resetting of vehicles to form episodes of training.
+    The associated MOOS-IvP mission files which are in that directory are based on the moos-ivp-agent's [AgentAquaticus](https://github.com/mivp-agent/moos-ivp-agent/tree/main/missions/AgentAquaticus) which allows for spawning of multiple vehicles in one MOOS-IvP simulation during training time. A good config block to look at is that for [pEpisodeManager](moos_ivp/episode_manager.md) which manages the resetting of vehicles to form episodes of training.
 
 ## Hi Joe :wave:
 

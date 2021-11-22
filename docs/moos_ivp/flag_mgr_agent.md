@@ -1,7 +1,7 @@
 # uFldFlagManagerAgent
 
 !!! Note
-    There is a known [bug](https://github.com/CarterFendley/moos-ivp-agent/issues/28) in the rending of flags by pMarineViewer. Rest assured, the vehicle will still have a flag despite this rendering issue.
+    There is a known [bug](https://github.com/mivp-agent/moos-ivp-agent/issues/3) in the rending of flags by pMarineViewer. Rest assured, the vehicle will still have a flag despite this rendering issue.
 
 ## Purpose of uFldFlagManagerAgent
 

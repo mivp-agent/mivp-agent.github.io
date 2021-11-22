@@ -7,7 +7,7 @@
 
 In training of ML agents it is often desirable to split training experience into episodes that end in either success or failure. pEpisodeManager provides the capability to reset vehicles when some conditions are meet. This prevents the need to shutdown the vehicle between episodes (a expensive process).
 
-The demo below shows pEpisodeManager running during training of an agent in the [AgentAquaticus](https://github.com/CarterFendley/moos-ivp-agent/tree/main/missions/AgentAquaticus) mission. This mission is configured to reset agents to their home flag when they successfully capture the flag **OR** when they go out of bounds.
+The demo below shows pEpisodeManager running during training of an agent in the [AgentAquaticus](https://github.com/mivp-agent/moos-ivp-agent/tree/main/missions/AgentAquaticus) mission. This mission is configured to reset agents to their home flag when they successfully capture the flag **OR** when they go out of bounds.
 
 ![pEpisodeManager](../assets/QTableDemo.gif)
 

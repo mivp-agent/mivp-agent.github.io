@@ -56,8 +56,8 @@ extra:
 edit_uri: https://github.com/mivp-agent/mivp-agent.github.io/tree/master/docs
 
 # Repo displace in material theme
-repo_url: https://github.com/CarterFendley/moos-ivp-agent
-repo_name: CarterFendley/moos-ivp-agent
+repo_url: https://github.com/mivp-agent/moos-ivp-agent
+repo_name: mivp-agent/moos-ivp-agent
 
 copyright: Copyright &copy; 2021 Carter Fendley
 

@@ -7,9 +7,9 @@ AgentAquaticus is a fork of the Aquaticus mission which integrates the moos-ivp-
 
 ## Usage
 
-There are two main launch scripts associated with this mission. The [launch_heron.sh](https://github.com/CarterFendley/moos-ivp-agent/blob/main/missions/AgentAquaticus/heron/launch_heron.sh) script launches a vehicles while the [launch_shoreside.sh](https://github.com/CarterFendley/moos-ivp-agent/blob/main/missions/AgentAquaticus/shoreside/launch_shoreside.sh) script is used once per simulation to launch infrastructure associated with the Aquaticus mission.
+There are two main launch scripts associated with this mission. The [launch_heron.sh](https://github.com/mivp-agent/moos-ivp-agent/blob/main/missions/AgentAquaticus/heron/launch_heron.sh) script launches a vehicles while the [launch_shoreside.sh](https://github.com/mivp-agent/moos-ivp-agent/blob/main/missions/AgentAquaticus/shoreside/launch_shoreside.sh) script is used once per simulation to launch infrastructure associated with the Aquaticus mission.
 
-Example simulation launch script can be seen [here](https://github.com/CarterFendley/moos-ivp-agent/blob/main/examples/QTable/scripts/sim_launch.sh).
+Example simulation launch script can be seen [here](https://github.com/mivp-agent/moos-ivp-agent/blob/main/examples/QTable/scripts/sim_launch.sh).
 
 ### Launching vehicles
 
@@ -26,7 +26,7 @@ There are a number of helpful **optional** parameters some of which are highligh
 
 - `--log`: Enables the writing of MOOS-IvP log files. Useful during debugging.
 - `--color=<my_color>`: Used to change the color of the vehicle when rendered via [pMarineViewer](https://oceanai.mit.edu/ivpman/pmwiki/pmwiki.php?n=IvPTools.PMViewer)
-- `--behavior=<behavior_name>`: Used to set initial behavior for drones. Any value placed here will show up in the `ACTION` field in the [meta_heron.bhv](https://github.com/CarterFendley/moos-ivp-agent/blob/main/missions/AgentAquaticus/heron/meta_heron.bhv) file.
+- `--behavior=<behavior_name>`: Used to set initial behavior for drones. Any value placed here will show up in the `ACTION` field in the [meta_heron.bhv](https://github.com/mivp-agent/moos-ivp-agent/blob/main/missions/AgentAquaticus/heron/meta_heron.bhv) file.
 - [Time Warp](https://oceanai.mit.edu/ivpman/pmwiki/pmwiki.php?n=Lab.ClassHelmAutonomy#section5.1.3): A integer value with how many times the simulation should be speed up relative to real world time.
 
 !!! Note
@@ -79,11 +79,11 @@ set MODE     = RETURN_BASE {
 
 Otherwise a number of `MODE`s can be selected depending on the `ACTION` value: `ATTACKING`, `ATTACK_LEFT`, `ATTACK_RIGHT`, `DEFENDING`, `STATIONING`
 
-For more information see the current [meta_heron.bhv](https://github.com/CarterFendley/moos-ivp-agent/blob/main/missions/AgentAquaticus/heron/meta_heron.bhv) and reference the [IvP Helm wiki](https://oceanai.mit.edu/ivpman/pmwiki/pmwiki.php?n=Helm.Cover) page's left hand side bar.
+For more information see the current [meta_heron.bhv](https://github.com/mivp-agent/moos-ivp-agent/blob/main/missions/AgentAquaticus/heron/meta_heron.bhv) and reference the [IvP Helm wiki](https://oceanai.mit.edu/ivpman/pmwiki/pmwiki.php?n=Helm.Cover) page's left hand side bar.
 
 ### pEpisodeManager
 
-The mission's [pEpisodeManager](../episode_manager.md) is configured in [this file](https://github.com/CarterFendley/moos-ivp-agent/blob/main/missions/AgentAquaticus/heron/plug_pEpisodeManager.moos) and currently looks for the `TAGGED == true` condition for failure and receives success signals by means of a `EPISODE_MGR_CTRL` post from `uFldFlagManagerAgent`
+The mission's [pEpisodeManager](../episode_manager.md) is configured in [this file](https://github.com/mivp-agent/moos-ivp-agent/blob/main/missions/AgentAquaticus/heron/plug_pEpisodeManager.moos) and currently looks for the `TAGGED == true` condition for failure and receives success signals by means of a `EPISODE_MGR_CTRL` post from `uFldFlagManagerAgent`
 
 ## Shoreside overview
 

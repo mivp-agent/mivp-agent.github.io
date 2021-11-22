@@ -16,7 +16,7 @@ jobs:
     - name: Checkout mivp-agent
       uses: actions/checkout@v2
       with:
-        repository: CarterFendley/moos-ivp-agent
+        repository: mivp-agent/moos-ivp-agent
         path: moos-ivp-agent
     - name: Link python model to correct dir
       run: ln -s ${{github.workspace}}/moos-ivp-agent/src/python_module/mivp_agent ${{github.workspace}}/mivp_agent
@@ -31,5 +31,5 @@ jobs:
     - name: Checkout mivp-agent
       uses: actions/checkout@v2
       with:
-        repository: CarterFendley/moos-ivp-agent
+        repository: mivp-agent/moos-ivp-agent
         path: moos-ivp-agent
