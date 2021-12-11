@@ -48,13 +48,22 @@ If new dependencies are added to the `environment.yml` you can update your local
 conda env update -f environment.yml
 ```
 
-### Linking the python package locally
+### Setting up mivp-agent
 
-This website uses [mkdocstrings](https://github.com/mkdocstrings/mkdocstrings) to generate API documentation for python. This package looks in the `src/` directory for the python module. You must link your copy of the `moos-ivp-agent/src/python_module` directory to the `src` directory. For example I use the following command on OSX.
+Because the mivp-agent package is not currently on PyPI or other indexes, we can not directly include it in the `environment.yml` file. To allow [mkdocstrings](https://mkdocstrings.github.io/) to import the package and read the doc strings, we must install it in the `mivp-agent-web` conda environment. Navigating to the `moos-ivp-agent/src/python_module` directory (wherever that is on your system) and running the following command.
 
 ```
-ln -s /Users/carter/src/moos-ivp-agent/src/python_module/mivp_agent /Users/carter/src/mivp-agent.github.io/mivp_agent
+pip3 install -e .
 ```
+
+Secondly, mkdocstrings needs a directory to watch for updates to know when to regenerate documentation. The plugin is configured to watch a `mivp_agent` directory in the root of this repository. All you need to do is link that directory to the `moos-ivp-agent/src/python_module/src/mivp_agent` in the main repository (wherever you put that). For example **on my system** I run the following command
+
+```
+ln -s /Users/carter/src/moos-ivp-agent/src/python_module/src/mivp_agent /Users/carter/src/mivp-agent.github.io/mivp_agent
+```
+
+**NOTE:** You will still need to *refresh* the browser to view updates to the python documentation 
+
 
 ### Serving the website locally
 
