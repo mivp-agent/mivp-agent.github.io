@@ -8,7 +8,7 @@
 
 Follow the instructions [here](https://conda.io/projects/conda/en/latest/user-guide/install/index.html#regular-installation) to install Anaconda or Miniconda.
 
-Assure that your terminal prompt is now prefixed by the conda environment that is currently activated as bellow
+Assure that your terminal prompt is now prefixed by the conda environment that is currently activated as below
 
 ```
 (base) $ 

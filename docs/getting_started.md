@@ -6,7 +6,7 @@
 Currently the best way of getting started is to:
 
 1. Look at the examples from the main repository
-    - See bellow for suggestions on **which** examples to focus on depending on your background
+    - See below for suggestions on **which** examples to focus on depending on your background
 2. While going through examples, reference the following two pages
     - Python API for building models
     - MOOS-IvP Reference for configuring new missions
@@ -20,7 +20,7 @@ I would recommend looking at the "ManagerExample" and look at the configuration 
 
 [ManagerExample :fontawesome-brands-readme:](https://github.com/mivp-agent/moos-ivp-agent/tree/main/examples/ManagerExample){ .md-button }
 
-Then, focus on the python side of the more complex "QTable" mission bellow.
+Then, focus on the python side of the more complex "QTable" mission below.
 
 ## If you said "What is MOOS-IvP"
 

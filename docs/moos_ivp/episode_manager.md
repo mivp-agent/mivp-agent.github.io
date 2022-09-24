@@ -149,7 +149,7 @@ The [MissionMessage](../python/mission_message.md) python wrapper provides a pyt
 
 ## Episode Reports
 
-To report of the success / failure of each episode pEpisodeManager will post to the `EPISODE_MGR_REPORT` a comma separated key/value pairs. This are also helpful for debugging. The bellow is an example of one such report.
+To report of the success / failure of each episode pEpisodeManager will post to the `EPISODE_MGR_REPORT` a comma separated key/value pairs. This are also helpful for debugging. The below is an example of one such report.
 
 ```
 NUM=8,SUCCESS=true,DURATION=122.0297,WILL_PAUSE=false
