@@ -446,6 +446,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#mivp_agent.manager.MissionManager.log_output_dir" class="md-nav__link">
+    log_output_dir()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#mivp_agent.manager.MissionManager.start" class="md-nav__link">
     start()
   </a>
@@ -776,6 +783,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#mivp_agent.manager.MissionManager.log_output_dir" class="md-nav__link">
+    log_output_dir()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#mivp_agent.manager.MissionManager.start" class="md-nav__link">
     start()
   </a>
@@ -928,6 +942,9 @@ with MissionManager('trainer') as mgr:
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_model_path</span>
 
     <span class="k">def</span> <span class="nf">log_output_dir</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        Returns the log path for the current session so custom files can be added to it.</span>
+<span class="sd">        &#39;&#39;&#39;</span>
         <span class="k">assert</span> <span class="bp">self</span><span class="o">.</span><span class="n">_log</span><span class="p">,</span> <span class="s2">&quot;This method should not be used, when logging is disabled&quot;</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_log_path</span>
 
@@ -1636,6 +1653,35 @@ with MissionManager('trainer') as mgr:
 
   </div>
 
+
+
+  <div class="doc doc-object doc-method">
+
+
+
+<h2 id="mivp_agent.manager.MissionManager.log_output_dir" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">log_output_dir</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span></code>
+
+
+</h2>
+
+    <div class="doc doc-contents ">
+
+      <p>Returns the log path for the current session so custom files can be added to it.</p>
+
+        <details class="quote">
+          <summary>Source code in <code>mivp_agent/manager.py</code></summary>
+          <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">log_output_dir</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    Returns the log path for the current session so custom files can be added to it.</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    <span class="k">assert</span> <span class="bp">self</span><span class="o">.</span><span class="n">_log</span><span class="p">,</span> <span class="s2">&quot;This method should not be used, when logging is disabled&quot;</span>
+    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_log_path</span>
+</code></pre></div>
+        </details>
+    </div>
+
+  </div>
 
 
 
