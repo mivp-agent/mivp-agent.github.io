@@ -8,11 +8,10 @@
       
       
       
-      
         <link rel="canonical" href="http://mivp-agent.github.io/python/mission_message/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.3.0">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
     
     
       
@@ -20,10 +19,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.8b42a75e.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.c382b1dc.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.3f5d1f46.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cc9b2e1e.min.css">
         
           
           
@@ -35,27 +34,26 @@
     
       
         
+        
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
-        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
-    
     
     
       <link rel="stylesheet" href="../../assets/_mkdocstrings.css">
     
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
-
   
 
 
   
-
   
 
 
-  <script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-FD1VZZ2BGB"),document.addEventListener("DOMContentLoaded",function(){"undefined"!=typeof location$&&location$.subscribe(function(t){gtag("config","G-FD1VZZ2BGB",{page_path:t.pathname})})})</script>
+  <script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-FD1VZZ2BGB"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&gtag("event","search",{search_term:this.value})}),"undefined"!=typeof location$&&location$.subscribe(function(e){gtag("config","G-FD1VZZ2BGB",{page_path:e.pathname})})})</script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-FD1VZZ2BGB"></script>
 
 
@@ -72,7 +70,6 @@
     <body dir="ltr" data-md-color-scheme="" data-md-color-primary="green" data-md-color-accent="">
   
     
-    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -89,6 +86,7 @@
       
     </div>
     
+    
       
 
   
@@ -98,11 +96,11 @@
     <a href="../.." title="mivp-agent" class="md-header__button md-logo" aria-label="mivp-agent" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -124,22 +122,21 @@
     
     
       <label class="md-header__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
       </label>
-      
-<div class="md-search" data-md-component="search" role="dialog">
+      <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
         <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
       
@@ -159,11 +156,10 @@
     
     
       <div class="md-header__source">
-        
-<a href="https://github.com/mivp-agent/moos-ivp-agent/" title="Go to repository" class="md-source" data-md-component="source">
+        <a href="https://github.com/mivp-agent/moos-ivp-agent" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
   </div>
   <div class="md-source__repository">
     mivp-agent/moos-ivp-agent
@@ -267,18 +263,17 @@
     <a href="../.." title="mivp-agent" class="md-nav__button md-logo" aria-label="mivp-agent" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
 
     </a>
     mivp-agent
   </label>
   
     <div class="md-nav__source">
-      
-<a href="https://github.com/mivp-agent/moos-ivp-agent/" title="Go to repository" class="md-source" data-md-component="source">
+      <a href="https://github.com/mivp-agent/moos-ivp-agent" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
   </div>
   <div class="md-source__repository">
     mivp-agent/moos-ivp-agent
@@ -401,6 +396,7 @@
       </a>
       
         
+
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
@@ -415,42 +411,42 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#mivp_agent.manager.MissionMessage" class="md-nav__link">
-    mivp_agent.manager.MissionMessage
+  <a href="#mivp_agent.messages.MissionMessage" class="md-nav__link">
+    mivp_agent.messages.MissionMessage
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#mivp_agent.manager.MissionMessage.act" class="md-nav__link">
+  <a href="#mivp_agent.messages.MissionMessage.act" class="md-nav__link">
     act()
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#mivp_agent.manager.MissionMessage.pause" class="md-nav__link">
+  <a href="#mivp_agent.messages.MissionMessage.pause" class="md-nav__link">
     pause()
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#mivp_agent.manager.MissionMessage.request_new" class="md-nav__link">
+  <a href="#mivp_agent.messages.MissionMessage.request_new" class="md-nav__link">
     request_new()
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#mivp_agent.manager.MissionMessage.start" class="md-nav__link">
+  <a href="#mivp_agent.messages.MissionMessage.start" class="md-nav__link">
     start()
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#mivp_agent.manager.MissionMessage.stop" class="md-nav__link">
+  <a href="#mivp_agent.messages.MissionMessage.stop" class="md-nav__link">
     stop()
   </a>
   
@@ -695,6 +691,7 @@
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
+
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
@@ -709,42 +706,42 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#mivp_agent.manager.MissionMessage" class="md-nav__link">
-    mivp_agent.manager.MissionMessage
+  <a href="#mivp_agent.messages.MissionMessage" class="md-nav__link">
+    mivp_agent.messages.MissionMessage
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#mivp_agent.manager.MissionMessage.act" class="md-nav__link">
+  <a href="#mivp_agent.messages.MissionMessage.act" class="md-nav__link">
     act()
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#mivp_agent.manager.MissionMessage.pause" class="md-nav__link">
+  <a href="#mivp_agent.messages.MissionMessage.pause" class="md-nav__link">
     pause()
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#mivp_agent.manager.MissionMessage.request_new" class="md-nav__link">
+  <a href="#mivp_agent.messages.MissionMessage.request_new" class="md-nav__link">
     request_new()
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#mivp_agent.manager.MissionMessage.start" class="md-nav__link">
+  <a href="#mivp_agent.messages.MissionMessage.start" class="md-nav__link">
     start()
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#mivp_agent.manager.MissionMessage.stop" class="md-nav__link">
+  <a href="#mivp_agent.messages.MissionMessage.stop" class="md-nav__link">
     stop()
   </a>
   
@@ -762,27 +759,28 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/mivp-agent/mivp-agent.github.io/tree/master/docs/python/mission_message.md" title="Edit this page" class="md-content__button md-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
-                  </a>
-                
-                
-                <h1 id="reference-for-missionmessage">Reference for <code>MissionMessage</code></h1>
+  <a href="https://github.com/mivp-agent/mivp-agent.github.io/tree/master/docs/python/mission_message.md" title="Edit this page" class="md-content__button md-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+
+<h1 id="reference-for-missionmessage">Reference for <code>MissionMessage</code></h1>
 
 
   <div class="doc doc-object doc-class">
 
-<a id="mivp_agent.manager.MissionMessage"></a>
+<a id="mivp_agent.messages.MissionMessage"></a>
     <div class="doc doc-contents first">
 
-      <p>This class is used to parse incoming messages into attributes (see bellow) and provide a simple interface for responding to each message.</p>
+      <p>This class is used to parse incoming messages into attributes (see below) and provide a simple interface for responding to each message.</p>
 <p><strong>IMPORTANT NOTE:</strong> Messages <strong>MUST</strong> be responded by one of the following methods to as <code>BHV_Agent</code> will not send another update until it has a response to the last.</p>
 <ul>
-<li><a href="#mivp_agent.manager.MissionMessage.act"><code>act(action)</code></a> <strong>&lt;---- Most common</strong></li>
-<li><a href="#mivp_agent.manager.MissionMessage.request_new"><code>request_new()</code></a></li>
-<li><a href="#mivp_agent.manager.MissionMessage.start"><code>start()</code></a></li>
-<li><a href="#mivp_agent.manager.MissionMessage.pause"><code>pause()</code></a></li>
-<li><a href="#mivp_agent.manager.MissionMessage.stop"><code>stop()</code></a></li>
+<li><a class="autorefs autorefs-internal" href="#mivp_agent.messages.MissionMessage.act"><code>act(action)</code></a> <strong>&lt;---- Most common</strong></li>
+<li><a class="autorefs autorefs-internal" href="#mivp_agent.messages.MissionMessage.request_new"><code>request_new()</code></a></li>
+<li><a class="autorefs autorefs-internal" href="#mivp_agent.messages.MissionMessage.start"><code>start()</code></a></li>
+<li><a class="autorefs autorefs-internal" href="#mivp_agent.messages.MissionMessage.pause"><code>pause()</code></a></li>
+<li><a class="autorefs autorefs-internal" href="#mivp_agent.messages.MissionMessage.stop"><code>stop()</code></a></li>
 </ul>
 
 <p><strong>Attributes:</strong></p>
@@ -817,6 +815,157 @@
       </tr>
   </tbody>
 </table>
+        <details class="quote">
+          <summary>Source code in <code>mivp_agent/messages.py</code></summary>
+          <div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">MissionMessage</span><span class="p">:</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    This class is used to parse incoming messages into attributes (see below) and provide a simple interface for responding to each message.</span>
+
+<span class="sd">    **IMPORTANT NOTE:** Messages **MUST** be responded by one of the following methods to as `BHV_Agent` will not send another update until it has a response to the last.</span>
+
+<span class="sd">      - [`act(action)`][mivp_agent.manager.MissionMessage.act] **&lt;---- Most common**</span>
+<span class="sd">      - [`request_new()`][mivp_agent.manager.MissionMessage.request_new]</span>
+<span class="sd">      - [`start()`][mivp_agent.manager.MissionMessage.start]</span>
+<span class="sd">      - [`pause()`][mivp_agent.manager.MissionMessage.pause]</span>
+<span class="sd">      - [`stop()`][mivp_agent.manager.MissionMessage.stop]</span>
+
+<span class="sd">    Attributes:</span>
+<span class="sd">      vname (str): The vehicle&#39;s name which generated the message.</span>
+<span class="sd">      state (dict): A dictionary containing key, value pairs of MOOS vars and their associated value at the time the message was created by `BHV_Agent`.</span>
+<span class="sd">      episode_report (dict or None): If `pEpisodeManager` is present on the vehicle this message will contain any &quot;report&quot; generated by it at the end of episodes. If no `pEpisodeManager` is present, the **value will be** `None`.</span>
+<span class="sd">      episode_state (str or None): If `pEpisodeManager` is present on the vehicle this message will be the state which that app is broadcasting. Otherwise, it will be `None`.</span>
+
+<span class="sd">    &#39;&#39;&#39;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">addr</span><span class="p">,</span> <span class="n">msg</span><span class="p">,</span> <span class="n">is_transition</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+        <span class="c1"># For use my MissionManager</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_addr</span> <span class="o">=</span> <span class="n">addr</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_response</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_rsp_lock</span> <span class="o">=</span> <span class="n">Lock</span><span class="p">()</span>
+
+        <span class="c1"># For use by client</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">state</span> <span class="o">=</span> <span class="n">msg</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">vname</span> <span class="o">=</span> <span class="n">msg</span><span class="p">[</span><span class="n">KEY_ID</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">episode_report</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">state</span><span class="p">[</span><span class="n">KEY_EPISODE_MGR_REPORT</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">episode_state</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">state</span><span class="p">[</span><span class="n">KEY_EPISODE_MGR_STATE</span><span class="p">]</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">episode_state</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">state</span><span class="p">[</span><span class="n">KEY_EPISODE_MGR_STATE</span><span class="p">]</span>
+
+        <span class="c1"># For use by logger</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_is_transition</span> <span class="o">=</span> <span class="n">is_transition</span>
+
+    <span class="k">def</span> <span class="nf">_assert_no_rsp</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">assert</span> <span class="bp">self</span><span class="o">.</span><span class="n">_response</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">,</span> <span class="s1">&#39;This message has already been responded to&#39;</span>
+
+    <span class="k">def</span> <span class="nf">mark_transition</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">with</span> <span class="bp">self</span><span class="o">.</span><span class="n">_rsp_lock</span><span class="p">:</span>
+            <span class="k">assert</span> <span class="bp">self</span><span class="o">.</span><span class="n">_response</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">,</span> <span class="s2">&quot;A message&#39;s state can only be marked at a transition before a response to that message has been set.&quot;</span>
+
+            <span class="bp">self</span><span class="o">.</span><span class="n">_is_transition</span> <span class="o">=</span> <span class="kc">True</span>
+
+    <span class="k">def</span> <span class="nf">act</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">action</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        This is used to send an action for the `BHV_Agent` to execute.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">          action (dict): An action to send (see below)</span>
+
+<span class="sd">        Example:</span>
+<span class="sd">          Actions submitted through `MissionMessage` are python dictionaries with the following **required** fields.</span>
+<span class="sd">          ```</span>
+<span class="sd">          msg.act({</span>
+<span class="sd">              &#39;speed&#39;: 1.0</span>
+<span class="sd">              &#39;course&#39;: 180.0</span>
+<span class="sd">          })</span>
+<span class="sd">          ```</span>
+<span class="sd">        Example:</span>
+<span class="sd">          Optionally, one can add a MOOS var and value they would like to post.</span>
+<span class="sd">          ```</span>
+<span class="sd">          msg.act({</span>
+<span class="sd">              &#39;speed&#39;: 0.0</span>
+<span class="sd">              &#39;course&#39;: 0.0</span>
+<span class="sd">              &#39;posts&#39;: {</span>
+<span class="sd">                &#39;ACTION&#39;: &#39;ATTACK_LEFT&#39;</span>
+<span class="sd">              },</span>
+<span class="sd">          })</span>
+<span class="sd">          ``` </span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_assert_no_rsp</span><span class="p">()</span>
+        <span class="c1"># Copy so we don&#39;t run into threading errors if client reuses the action dict</span>
+        <span class="n">instr</span> <span class="o">=</span> <span class="n">action</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+        <span class="k">if</span> <span class="s1">&#39;posts&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">action</span><span class="p">:</span>
+            <span class="n">instr</span><span class="p">[</span><span class="s1">&#39;posts&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="n">validateAction</span><span class="p">(</span><span class="n">instr</span><span class="p">)</span>
+        <span class="n">instr</span><span class="p">[</span><span class="s1">&#39;ctrl_msg&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;SEND_STATE&#39;</span>
+
+        <span class="k">with</span> <span class="bp">self</span><span class="o">.</span><span class="n">_rsp_lock</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_response</span> <span class="o">=</span> <span class="n">instr</span>
+
+    <span class="k">def</span> <span class="nf">start</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        This method is used to send a message to `pEpisodeManager` to **start** an episode. The following message will be constructed and dispatched.</span>
+
+<span class="sd">        ```</span>
+<span class="sd">        {</span>
+<span class="sd">          &#39;speed&#39;: 0.0,</span>
+<span class="sd">          &#39;course&#39;: 0.0,</span>
+<span class="sd">          &#39;posts&#39;: {</span>
+<span class="sd">            &#39;EPISODE_MGR_CTRL&#39;: &#39;type=start&#39;</span>
+<span class="sd">          },</span>
+<span class="sd">        }</span>
+<span class="sd">        ```</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_assert_no_rsp</span><span class="p">()</span>
+        <span class="k">with</span> <span class="bp">self</span><span class="o">.</span><span class="n">_rsp_lock</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_response</span> <span class="o">=</span> <span class="n">INSTR_START</span>
+
+    <span class="k">def</span> <span class="nf">pause</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        This method is used to send a message to `pEpisodeManager` to **pause** after the current episode. The following messagewill be constructed and dispatched.</span>
+
+<span class="sd">        ```</span>
+<span class="sd">        {</span>
+<span class="sd">          &#39;speed&#39;: 0.0,</span>
+<span class="sd">          &#39;course&#39;: 0.0,</span>
+<span class="sd">          &#39;posts&#39;: {</span>
+<span class="sd">            &#39;EPISODE_MGR_CTRL&#39;: &#39;type=pause&#39;</span>
+<span class="sd">          },</span>
+<span class="sd">        }</span>
+<span class="sd">        ```</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_assert_no_rsp</span><span class="p">()</span>
+        <span class="k">with</span> <span class="bp">self</span><span class="o">.</span><span class="n">_rsp_lock</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_response</span> <span class="o">=</span> <span class="n">INSTR_PAUSE</span>
+
+    <span class="k">def</span> <span class="nf">stop</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        This method is used to send a message to `pEpisodeManager` to **hardstop** an episode immediately. The following messagewill be constructed and dispatched.</span>
+
+<span class="sd">        ```</span>
+<span class="sd">        {</span>
+<span class="sd">          &#39;speed&#39;: 0.0,</span>
+<span class="sd">          &#39;course&#39;: 0.0,</span>
+<span class="sd">          &#39;posts&#39;: {</span>
+<span class="sd">            &#39;EPISODE_MGR_CTRL&#39;: &#39;type=hardstop&#39;</span>
+<span class="sd">          },</span>
+<span class="sd">        }</span>
+<span class="sd">        ```</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_assert_no_rsp</span><span class="p">()</span>
+
+        <span class="k">with</span> <span class="bp">self</span><span class="o">.</span><span class="n">_rsp_lock</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_response</span> <span class="o">=</span> <span class="n">INSTR_STOP</span>
+
+    <span class="k">def</span> <span class="nf">request_new</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        This method is used to send ask `BHV_Agent` to send another action.</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_assert_no_rsp</span><span class="p">()</span>
+
+        <span class="k">with</span> <span class="bp">self</span><span class="o">.</span><span class="n">_rsp_lock</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_response</span> <span class="o">=</span> <span class="n">INSTR_SEND_STATE</span>
+</code></pre></div>
+        </details>
 
 
 
@@ -835,7 +984,7 @@
 
 
 
-<h2 id="mivp_agent.manager.MissionMessage.act" class="doc doc-heading">
+<h2 id="mivp_agent.messages.MissionMessage.act" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">act</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">action</span><span class="p">)</span></code>
 
 
@@ -884,7 +1033,7 @@
 </code></pre>
 
         <details class="quote">
-          <summary>Source code in <code>mivp_agent/manager.py</code></summary>
+          <summary>Source code in <code>mivp_agent/messages.py</code></summary>
           <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">act</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">action</span><span class="p">):</span>
     <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    This is used to send an action for the `BHV_Agent` to execute.</span>
@@ -930,11 +1079,12 @@
 
 
 
+
   <div class="doc doc-object doc-method">
 
 
 
-<h2 id="mivp_agent.manager.MissionMessage.pause" class="doc doc-heading">
+<h2 id="mivp_agent.messages.MissionMessage.pause" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">pause</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span></code>
 
 
@@ -953,7 +1103,7 @@
 </code></pre>
 
         <details class="quote">
-          <summary>Source code in <code>mivp_agent/manager.py</code></summary>
+          <summary>Source code in <code>mivp_agent/messages.py</code></summary>
           <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">pause</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
     <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    This method is used to send a message to `pEpisodeManager` to **pause** after the current episode. The following messagewill be constructed and dispatched.</span>
@@ -983,7 +1133,7 @@
 
 
 
-<h2 id="mivp_agent.manager.MissionMessage.request_new" class="doc doc-heading">
+<h2 id="mivp_agent.messages.MissionMessage.request_new" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">request_new</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span></code>
 
 
@@ -994,7 +1144,7 @@
       <p>This method is used to send ask <code>BHV_Agent</code> to send another action.</p>
 
         <details class="quote">
-          <summary>Source code in <code>mivp_agent/manager.py</code></summary>
+          <summary>Source code in <code>mivp_agent/messages.py</code></summary>
           <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">request_new</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
     <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    This method is used to send ask `BHV_Agent` to send another action.</span>
@@ -1015,7 +1165,7 @@
 
 
 
-<h2 id="mivp_agent.manager.MissionMessage.start" class="doc doc-heading">
+<h2 id="mivp_agent.messages.MissionMessage.start" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">start</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span></code>
 
 
@@ -1034,7 +1184,7 @@
 </code></pre>
 
         <details class="quote">
-          <summary>Source code in <code>mivp_agent/manager.py</code></summary>
+          <summary>Source code in <code>mivp_agent/messages.py</code></summary>
           <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">start</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
     <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    This method is used to send a message to `pEpisodeManager` to **start** an episode. The following message will be constructed and dispatched.</span>
@@ -1064,7 +1214,7 @@
 
 
 
-<h2 id="mivp_agent.manager.MissionMessage.stop" class="doc doc-heading">
+<h2 id="mivp_agent.messages.MissionMessage.stop" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">stop</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span></code>
 
 
@@ -1083,7 +1233,7 @@
 </code></pre>
 
         <details class="quote">
-          <summary>Source code in <code>mivp_agent/manager.py</code></summary>
+          <summary>Source code in <code>mivp_agent/messages.py</code></summary>
           <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">stop</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
     <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    This method is used to send a message to `pEpisodeManager` to **hardstop** an episode immediately. The following messagewill be constructed and dispatched.</span>
@@ -1117,11 +1267,6 @@
     </div>
 
   </div>
-                
-              
-              
-                
-
 
               
             </article>
@@ -1130,15 +1275,14 @@
         
       </main>
       
-        
-<footer class="md-footer">
+        <footer class="md-footer">
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
         <a href="../mission_manager/" class="md-footer__link md-footer__link--prev" aria-label="Previous: MissionManager" rel="prev">
           <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
           <div class="md-footer__title">
             <div class="md-ellipsis">
@@ -1162,7 +1306,7 @@
             </div>
           </div>
           <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
           </div>
         </a>
       
@@ -1170,15 +1314,14 @@
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
-      <div class="md-footer-copyright">
-        
-          <div class="md-footer-copyright__highlight">
-            Copyright &copy; 2021 Carter Fendley
-          </div>
-        
-        
-        
-      </div>
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2022 Carter Fendley
+    </div>
+  
+  
+</div>
       
     </div>
   </div>
@@ -1188,10 +1331,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.expand", "navigation.instant", "navigation.tabs", "navigation.tabs.sticky"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.f8263e09.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.expand", "navigation.instant", "navigation.tabs", "navigation.tabs.sticky"], "search": "../../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.4fc53ad4.min.js"></script>
+      <script src="../../assets/javascripts/bundle.a6c66575.min.js"></script>
       
     
   </body>
