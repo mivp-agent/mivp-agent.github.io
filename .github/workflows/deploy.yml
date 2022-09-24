@@ -21,7 +21,7 @@ jobs:
         repository: mivp-agent/moos-ivp-agent
         path: moos-ivp-agent
     - name: Install mivp_agent pip package
-      run: pip install ${{github.workspace}}/moos-ivp-agent
+      run: pip install ${{github.workspace}}/moos-ivp-agent/src/python_module
     - name: Build MkDocs
       shell: bash -l {0}
       run: mkdocs build
