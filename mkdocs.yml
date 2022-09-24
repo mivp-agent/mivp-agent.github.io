@@ -3,8 +3,6 @@ site_url: http://mivp-agent.github.io
 
 plugins:
     - mkdocstrings:
-        watch:
-            - mivp_agent
     - search
 nav:
     - Home: index.md
@@ -59,5 +57,5 @@ edit_uri: https://github.com/mivp-agent/mivp-agent.github.io/tree/master/docs
 repo_url: https://github.com/mivp-agent/moos-ivp-agent
 repo_name: mivp-agent/moos-ivp-agent
 
-copyright: Copyright &copy; 2021 Carter Fendley
+copyright: Copyright &copy; 2022 Carter Fendley
 

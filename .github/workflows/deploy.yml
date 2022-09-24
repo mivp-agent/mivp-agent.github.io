@@ -20,8 +20,8 @@ jobs:
       with:
         repository: mivp-agent/moos-ivp-agent
         path: moos-ivp-agent
-    - name: Link python model to correct dir
-      run: ln -s ${{github.workspace}}/moos-ivp-agent/src/python_module/mivp_agent ${{github.workspace}}/mivp_agent
+    - name: Install mivp_agent pip package
+      run: pip install ${{github.workspace}}/moos-ivp-agent
     - name: Build MkDocs
       shell: bash -l {0}
       run: mkdocs build
